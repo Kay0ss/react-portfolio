@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Kay0ss/react-portfolio/static/css/main.8c61612e.chunk.css",
+    "main.js": "/Kay0ss/react-portfolio/static/js/main.d0006f3a.chunk.js",
+    "main.js.map": "/Kay0ss/react-portfolio/static/js/main.d0006f3a.chunk.js.map",
+    "runtime-main.js": "/Kay0ss/react-portfolio/static/js/runtime-main.43aea8c7.js",
+    "runtime-main.js.map": "/Kay0ss/react-portfolio/static/js/runtime-main.43aea8c7.js.map",
+    "static/css/2.383c0125.chunk.css": "/Kay0ss/react-portfolio/static/css/2.383c0125.chunk.css",
+    "static/js/2.73a4485f.chunk.js": "/Kay0ss/react-portfolio/static/js/2.73a4485f.chunk.js",
+    "static/js/2.73a4485f.chunk.js.map": "/Kay0ss/react-portfolio/static/js/2.73a4485f.chunk.js.map",
+    "index.html": "/Kay0ss/react-portfolio/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/Kay0ss/react-portfolio/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.8c61612e.chunk.css.map": "/Kay0ss/react-portfolio/static/css/main.8c61612e.chunk.css.map",
+    "static/js/2.73a4485f.chunk.js.LICENSE.txt": "/Kay0ss/react-portfolio/static/js/2.73a4485f.chunk.js.LICENSE.txt",
+    "static/media/flexbox.efd324e8.jpeg": "/Kay0ss/react-portfolio/static/media/flexbox.efd324e8.jpeg",
+    "static/media/me.57685930.jpeg": "/Kay0ss/react-portfolio/static/media/me.57685930.jpeg",
+    "static/media/notetaker.03dde7a9.png": "/Kay0ss/react-portfolio/static/media/notetaker.03dde7a9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43aea8c7.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.73a4485f.chunk.js",
+    "static/css/main.8c61612e.chunk.css",
+    "static/js/main.d0006f3a.chunk.js"
+  ]
+}
