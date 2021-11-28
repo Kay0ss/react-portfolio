@@ -35,8 +35,8 @@ function NavTabs({ currentPage, handlePageChange }) {
           <li className="nav-item">
             <a
               className="hover"
-              href="#blog"
-              onClick={() => handlePageChange("Blog")}
+              href="#Projects"
+              onClick={() => handlePageChange("Projects")}
             >
               Projects
             </a>
