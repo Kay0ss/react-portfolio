@@ -24,24 +24,6 @@ function NavTabs({ currentPage, handlePageChange }) {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          {/* <li className="nav-item">
-            <a
-              className="hover"
-              href="#about"
-              onClick={() => handlePageChange("About")}
-            >
-              About
-            </a>
-          </li> */}
-          {/* <li className="nav-item">
-            <a
-              className="hover"
-              href="#Projects"
-              onClick={() => handlePageChange("Projects")}
-            >
-              Projects
-            </a>
-          </li> */}
           <li className="nav-item">
             <a className="hover" href="#home">
               Resume
@@ -54,7 +36,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               href="#contact"
               onClick={() => handlePageChange("Contact")}
             >
-              Say Hello
+              <span>Say Hello</span>
             </button>
           </li>
         </ul>

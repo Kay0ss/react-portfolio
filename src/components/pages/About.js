@@ -7,11 +7,7 @@ function About(props) {
       <div id="about-me" className="container-fluid">
         <div className="row">
           <div className="col-md-10">
-            <div>
-              <figure className="wrapper">
-                <h4 className="typing-demo">About Me.</h4>
-              </figure>
-            </div>
+            <div>About Me.</div>
             <p id="grabber">
               I believe there are so many things in this world that are yet to
               be done and so many new stories to be told. My goal in life is to
