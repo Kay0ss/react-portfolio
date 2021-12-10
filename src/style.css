@@ -1,10 +1,14 @@
 * {
   font-family: Arial, Helvetica, sans-serif, monospace;
+  /* background-color: #2f2fa2; */
 }
 :root {
   --text: rgb(211, 211, 211);
 }
 
+body{
+  overflow-x: hidden;
+}
 
 Body::-webkit-scrollbar-track
 {
@@ -42,7 +46,7 @@ Body::-webkit-scrollbar-thumb
   justify-content: flex-start;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 50px;
   font-weight: bold;
   text-decoration: none;
@@ -180,7 +184,7 @@ Body::-webkit-scrollbar-thumb
 }
 
 .home-wrapper {
-  height: 60px;
+  height: 80px;
   width: 100%;
 }
 
@@ -233,8 +237,8 @@ Body::-webkit-scrollbar-thumb
 } */
 
 #myPic {
-  width: 13rem;
-  border-radius: 100px;
+  border-radius: 100%;
+  min-width: 40%;
 }
 
 #about-me {
@@ -253,6 +257,7 @@ Body::-webkit-scrollbar-thumb
   font-weight: 600;
   color:rgb(211, 211, 211);
   font-size: 25px;
+  min-width: 90%;
 }
 
 .highlight{
@@ -427,6 +432,48 @@ a a:hover, .button  {
 } */
 
 
+/* -----------------------------------------CONTACT PAGE-------------------------------------------------------------- */
+
+.color{
+  padding-top: 40px;
+  height: 50vh;
+  overflow: hidden;
+  background-color: #2f2fa2;
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 100vh; */
+  background-color: #2f2fa2;
+  width: 40%;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 15px;
+  color:rgb(211, 211, 211); 
+}
+
+.contact-container input{
+  font-size: 25px;
+  font-weight: 300;
+  width: 48%;
+  margin: auto;
+  border-radius: 8px;
+  border: 2px solid rgb(134, 134, 134);
+}
+
+
+.scroll{
+  text-align: center;
+  background-color: #2f2fa2;
+  font-size: 50px;
+  font-weight: 700;
+}
+
 /* -------------FOOTER---------------- */
 
 .row {
@@ -485,4 +532,60 @@ footer {
   color: var(--text);
   /* padding-bottom: 15px; */
   background-color: rgb(90, 90, 104);
+}
+
+
+/* --------------------Media Queries--------------------------------- */
+
+@media only screen and (max-width: 768px){
+
+  a{
+    padding: 10px;
+  }
+
+  .title{
+    display: none;
+  }
+
+  .proj-bio{
+    display: none;
+  }
+
+  a .button{
+    display: none;
+  }
+
+  .overlay{
+    display: none;
+  }
+
+  .recent-bio{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .about-section{
+    flex-direction: column;
+  }
+
+  .about{
+    width: 100%;
+  }
+
+  #myPic{
+    padding-top: 30px;
+  }
+
+  #grabber{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  
+}
+
+@media only screen and (max-width: 614px) {
+  .text{
+    display: inline;
+  }
 }
