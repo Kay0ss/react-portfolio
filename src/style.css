@@ -65,18 +65,18 @@ Body::-webkit-scrollbar-thumb {
 #navbarNav {
   width: 68%;
   display: flex;
-  /* justify-content: flex-end; */
-  flex-direction: row !important;
+  justify-content: flex-end;
+  /* flex-direction: row !important; */
 }
 
 .navbar-nav ul{
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
 }
 
 .collapse{
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
 }
 
 .nav-item{
