@@ -63,9 +63,24 @@ Body::-webkit-scrollbar-thumb {
 }
 
 #navbarNav {
+  width: 68%;
   display: flex;
-  justify-content: flex-end;
-  /* flex-direction: row !important; */
+  /* justify-content: flex-end; */
+  flex-direction: row !important;
+}
+
+.navbar-nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.collapse{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item{
+  width: 120px !important;
 }
 
 .hover:visited,
@@ -101,6 +116,7 @@ Body::-webkit-scrollbar-thumb {
   animation-direction: alternate;
   color: #f64c72;
 }
+
 
 .hi {
   width: 110px;
@@ -682,8 +698,10 @@ h1 {
     display: inline;
   }
 
-  .navbar-nav {
-    display: flex !important;
+
+  .collapse{
+    display: flex;
+    flex-direction: row !important;
   }
 
   .btn-container{

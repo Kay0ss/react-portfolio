@@ -25,7 +25,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       <div className="collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="hover" href="#home">
+            <a className="hover" onClick={() => alert("I'm still working on that page🕺🏼")} >
               Resume
             </a>
           </li>

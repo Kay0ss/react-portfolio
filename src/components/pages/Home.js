@@ -31,9 +31,9 @@ function Home() {
 
     <div class="wrapper">
 	    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
-	      <li> <a href="#"><i class="fa fa-dribbble"></i></a></li> 
-	      <li> <a href="#"><i class="fa fa-github"></i></a></li> 
-	      <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+	      <li> <a href="https://dribbble.com/Jack_T" target="_blank"><i class="fa fa-dribbble"></i></a></li> 
+	      <li> <a href="https://github.com/Kay0ss" target="_blank"><i class="fa fa-github"></i></a></li> 
+	      <li> <a href="https://www.linkedin.com/in/jacktheisen/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 	  	</ul>
       </div>
       <div className="copyright">Made with love🖤 © Jack Theisen</div>
