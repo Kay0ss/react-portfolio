@@ -30,14 +30,10 @@ function NavTabs({ currentPage, handlePageChange }) {
             </a>
           </li>
           <li className="nav-item">
-            <button className="hi"
-            variant="warning"
-              // className="hover"
-              href="#Contact"
-              // onClick={() => handlePageChange("Contact")}
-            >
+            <a href="mailto:jackschoolbiz@gmail.com?subject=Email from Portfolio">
+            <button className="hi">
               <span>Say Hello</span>
-            </button>
+            </button></a>
           </li>
         </ul>
       </div>

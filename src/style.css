@@ -503,6 +503,8 @@ h1 {
 #submit{
   width: 30%;
   margin: auto;
+  padding: auto;
+  height: min-content;
 }
 
 /* -------------FOOTER---------------- */
@@ -591,6 +593,7 @@ h1 {
   color:rgb(211, 211, 211);
   padding-top: 10px;
   font-family: Verdana;
+  background-color: #2f2fa2;
   
 }
 
@@ -708,5 +711,7 @@ h1 {
 
   #submit{
     width: 100%;
+    padding: auto;
+    height: min-content;
   }
 }

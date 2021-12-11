@@ -53,7 +53,7 @@ export default function Projects() {
           </a>
         </div>
 
-        <div className="btn-container">
+        {/* <div className="btn-container">
           <img src={Starquiz} alt="Star Wars Quiz app"></img>
           <p className="title">Character Quiz</p>
           <p className="proj-bio">
@@ -67,9 +67,9 @@ export default function Projects() {
           >
             <button className="button">Visit Website ▸</button>
           </a>
-        </div>
+        </div> */}
 
-        <div className="btn-container">
+        {/* <div className="btn-container">
           <img src={Starquiz} alt="Star Wars Quiz app"></img>
           <p className="title">Character Quiz</p>
           <p className="proj-bio">
@@ -83,9 +83,9 @@ export default function Projects() {
           >
             <button className="button">Visit Website ▸</button>
           </a>
-        </div>
+        </div> */}
 
-        <div className="btn-container">
+        {/* <div className="btn-container">
           <img src={Starquiz} alt="Star Wars Quiz app"></img>
           <p className="title">Character Quiz</p>
           <p className="proj-bio">
@@ -99,7 +99,7 @@ export default function Projects() {
           >
             <button className="button">Visit Website ▸</button>
           </a>
-        </div>
+        </div> */}
 
       </div>
     </div>
