@@ -361,7 +361,7 @@ Body::-webkit-scrollbar-thumb {
 
 .title {
   position: absolute;
-  width: 385px;
+  width: 75%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -643,9 +643,9 @@ h1 {
     display: none;
   }
 
-  /* .proj-bio {
+  .proj-bio {
     display: none;
-  } */
+  }
 
   a .button {
     display: none;
@@ -710,6 +710,10 @@ h1 {
 
   .btn-container{
     width: 47%;
+  }
+
+  .title{
+    width: 20%;
   }
 
   .projects-container{
