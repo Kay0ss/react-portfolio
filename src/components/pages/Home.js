@@ -26,9 +26,8 @@ function Home() {
       </div>
       <About />
       <Projects />
-      <Contact />
+      <Contact id="Contact"/>
 
-    {/* ------------------------------------------------------------------- */}
     <div class="wrapper">
 	    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
 	      <li> <a href="#"><i class="fa fa-dribbble"></i></a></li> 
@@ -36,8 +35,9 @@ function Home() {
 	      <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
 	  	</ul>
       </div>
-    {/* ------------------------------------------------------------------- */}
+      <div className="copyright">Made with love🖤 © Jack Theisen</div>
     </div>
+
   );
 }
 

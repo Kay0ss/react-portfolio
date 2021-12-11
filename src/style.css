@@ -429,7 +429,7 @@ a a:hover,
 /* -----------------------------------------CONTACT PAGE-------------------------------------------------------------- */
 
 .color {
-  padding-top: 48%;
+  /* padding-top: 20%; */
   height: 100%;
   overflow: hidden;
   background-color: #2f2fa2;
@@ -439,12 +439,9 @@ a a:hover,
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  /* height: 100vh; */
   background-color: #2f2fa2;
   width: 48%;
   margin: auto;
-  /* margin-top: 40px; */
 }
 
 h1 {
@@ -456,9 +453,11 @@ h1 {
 .contact-container input {
   font-size: 20px;
   font-weight: 300;
-  width: 50%;
+  width: 49.5%;
   margin-bottom:8px;
-  margin-left: 0;
+  padding: 6px;
+  height: 40px;
+  /* padding-right: 6px; */
   border-radius: 8px;
   border: 2px solid rgb(134, 134, 134);
   
@@ -470,7 +469,7 @@ h1 {
   justify-content: center;
   justify-content: space-between;
   width: 100%;
-  
+  --bs-gutter-x: 0 !important;
 }
 
 #choices {
@@ -502,7 +501,8 @@ h1 {
 }
 
 #submit{
-  width: 100%;
+  width: 30%;
+  margin: auto;
 }
 
 /* -------------FOOTER---------------- */
@@ -529,6 +529,7 @@ h1 {
   justify-content: center;
   background-color: #2f2fa2;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .social-icons .fa {
@@ -585,6 +586,14 @@ h1 {
 .social-icons .fa-github,.social-icons{background-color:#070709;} 
 .social-icons .fa-linkedin,.social-icons{background-color:#0085AE;} 
 
+.copyright{
+  text-align: center;
+  color:rgb(211, 211, 211);
+  padding-top: 10px;
+  font-family: Verdana;
+  
+}
+
 
 /* --------------------Media Queries--------------------------------- */
 
@@ -604,7 +613,7 @@ h1 {
   }
 
   .projects-container {
-    padding-bottom: 20px;
+    padding-bottom: 30%;
   }
 
   .title {
@@ -646,6 +655,13 @@ h1 {
     text-align: center;
     margin: auto;
   }
+
+
+  #submit{
+    width: 40%;
+    padding: auto;
+    height: min-content;
+  }
 }
 
 @media only screen and (max-width: 614px) {
@@ -667,12 +683,16 @@ h1 {
     width: 47%;
   }
 
+  .projects-container{
+    padding-bottom: 30%;
+  }
+
   .contact-container{
     width: 80%;
   }
 
   .color{
-    height: 90vh;
+    height: 90%;
   }
 
   .row{
@@ -683,6 +703,10 @@ h1 {
   }
 
   .row input{
+    width: 100%;
+  }
+
+  #submit{
     width: 100%;
   }
 }

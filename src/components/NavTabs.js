@@ -33,8 +33,8 @@ function NavTabs({ currentPage, handlePageChange }) {
             <button className="hi"
             variant="warning"
               // className="hover"
-              href="#contact"
-              onClick={() => handlePageChange("Contact")}
+              href="#Contact"
+              // onClick={() => handlePageChange("Contact")}
             >
               <span>Say Hello</span>
             </button>
