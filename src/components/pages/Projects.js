@@ -52,6 +52,55 @@ export default function Projects() {
             <button className="button">Visit Website ▸</button>
           </a>
         </div>
+
+        <div className="btn-container">
+          <img src={Starquiz} alt="Star Wars Quiz app"></img>
+          <p className="title">Character Quiz</p>
+          <p className="proj-bio">
+            loremsd fsdfa adsf asdf dafadsf adsf asdf sdaf asdf
+          </p>
+          <div className="overlay"></div>
+          <a
+            href="https://coleenyart.github.io/which-star-wars-character-are-you/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="button">Visit Website ▸</button>
+          </a>
+        </div>
+
+        <div className="btn-container">
+          <img src={Starquiz} alt="Star Wars Quiz app"></img>
+          <p className="title">Character Quiz</p>
+          <p className="proj-bio">
+            loremsd fsdfa adsf asdf dafadsf adsf asdf sdaf asdf
+          </p>
+          <div className="overlay"></div>
+          <a
+            href="https://coleenyart.github.io/which-star-wars-character-are-you/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="button">Visit Website ▸</button>
+          </a>
+        </div>
+
+        <div className="btn-container">
+          <img src={Starquiz} alt="Star Wars Quiz app"></img>
+          <p className="title">Character Quiz</p>
+          <p className="proj-bio">
+            loremsd fsdfa adsf asdf dafadsf adsf asdf sdaf asdf
+          </p>
+          <div className="overlay"></div>
+          <a
+            href="https://coleenyart.github.io/which-star-wars-character-are-you/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="button">Visit Website ▸</button>
+          </a>
+        </div>
+
       </div>
     </div>
   );

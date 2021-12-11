@@ -3,7 +3,7 @@ import React from "react";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar">
       <a
         className="brand"
         href="#home"
@@ -11,7 +11,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       >
         JT
       </a>
-      <button
+      {/* <button
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -20,9 +20,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+        <span className="navbar-toggler-icon">😀</span>
+      </button> */}
+      <div className="collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
             <a className="hover" href="#home">
