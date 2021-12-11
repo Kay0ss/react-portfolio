@@ -704,6 +704,10 @@ h1 {
     flex-direction: row !important;
   }
 
+  .hi{
+    white-space: nowrap;
+  }
+
   .btn-container{
     width: 47%;
   }
