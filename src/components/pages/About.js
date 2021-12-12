@@ -1,7 +1,6 @@
 import React from "react";
 import Me from "../../images/me.jpeg";
 import Image from "react-bootstrap/Image";
-import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css"
 
 function About(props) {

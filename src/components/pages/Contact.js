@@ -1,7 +1,4 @@
 import React from "react";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 function Contact() {
   return (
@@ -23,7 +20,7 @@ function Contact() {
           ></input>
         </div>
         <select id="choices" name="choices">
-          <option value="project" selected>
+          <option value="project" defaultValue>
             Project
           </option>
           <option value="inquire">Inquiry</option>

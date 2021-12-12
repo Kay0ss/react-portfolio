@@ -1,16 +1,12 @@
 import React from "react";
-// import Card from "react-bootstrap/Card";
-// import trueCrime from "../../images/True-Crime.png";
-import Me from "../../images/me.jpeg";
-// import captionMe from "../../images/caption-me.png";
-// import Starquiz from "../../images/star-wars-quiz.png";
 import Projects from "../pages/Projects";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
-import { Element } from 'react-scroll';
 
+let offSet = 50;
+let duration = 1;
 
 function Home() {
   return (
@@ -18,8 +14,8 @@ function Home() {
       <div className="parallax">
         <div className="welcome-container">
           <div className="text home-wrapper">
-          <ScrollAnimation animateIn="animate__slideInRight" animateOut="animate__slideOutLeft" duration="1" offset="50"><span id="first">Hello, I'm </span>Jack Theisen</ScrollAnimation>
-            <ScrollAnimation animateIn="animate__slideInLeft" animateOut="animate__slideOutRight" duration="1" offset="50"><span id="first">I'm a</span> Full Stack Web Developer</ScrollAnimation>
+          <ScrollAnimation animateIn="animate__slideInRight" animateOut="animate__slideOutLeft" duration={duration} offset={offSet}><span id="first">Hello, I'm </span>Jack Theisen</ScrollAnimation>
+            <ScrollAnimation animateIn="animate__slideInLeft" animateOut="animate__slideOutRight" duration={duration} offset={offSet}><span id="first">I'm a</span> Full Stack Web Developer</ScrollAnimation>
           </div>
           <div className="text home-wrapper">
           </div>
@@ -29,11 +25,11 @@ function Home() {
       <Projects />
       <Contact id="Contact"/>
 
-    <div class="wrapper">
-	    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
-	      <li> <a href="https://dribbble.com/Jack_T" target="_blank"><i class="fa fa-dribbble"></i></a></li> 
-	      <li> <a href="https://github.com/Kay0ss" target="_blank"><i class="fa fa-github"></i></a></li> 
-	      <li> <a href="https://www.linkedin.com/in/jacktheisen/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    <div className="wrapper">
+	    <ul className="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
+	      <li> <a href="https://dribbble.com/Jack_T" target="_blank" rel="noreferrer"><i className="fa fa-dribbble"></i></a></li> 
+	      <li> <a href="https://github.com/Kay0ss" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a></li> 
+	      <li> <a href="https://www.linkedin.com/in/jacktheisen/" rel="noreferrer"target="_blank"><i className="fa fa-linkedin"></i></a></li>
 	  	</ul>
       </div>
       <div className="copyright">Made with love🖤 © Jack Theisen</div>

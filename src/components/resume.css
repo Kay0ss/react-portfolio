@@ -1,0 +1,31 @@
+.page-container{
+    background-color: #2f2fa2;
+    width: 100vw;
+    height: 150vh;
+  
+  }
+  
+  .resume-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+    width: 85vw;
+    height: 95%;
+    margin: auto;
+    padding: 5em 2em 5em 2em;
+  
+  }
+  
+  .sidebar{
+    width: 30%;
+  }
+  
+  .main-content{
+    width: 70%;
+  }
+  
+  .resumeHeader{
+    font-size: 90%;
+    font-weight: 700;
+    width: 30%;
+  }

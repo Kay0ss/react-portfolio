@@ -1,6 +1,7 @@
 import React from "react";
 // import Button from "react-bootstrap/button";
 
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar">
@@ -25,11 +26,13 @@ function NavTabs({ currentPage, handlePageChange }) {
       <div className="collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="hover" onClick={() => alert("I'm still working on that page🕺🏼")} >
+            <a className="hover resume" href="#Resume"
+            onClick={() => handlePageChange("Resume")} 
+            >
               Resume
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item hi-container">
             <a href="mailto:jackschoolbiz@gmail.com?subject=Email from Portfolio">
             <button className="hi">
               <span>Say Hello</span>
