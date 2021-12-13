@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.846e8782.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.0807bf7d.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.0807bf7d.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.83ea1e73.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.e4f4e0fc.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.e4f4e0fc.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.37b83d9e.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.37b83d9e.js.map",
     "static/css/2.964f5836.chunk.css": "/react-portfolio/static/css/2.964f5836.chunk.css",
-    "static/js/2.cb6d06fe.chunk.js": "/react-portfolio/static/js/2.cb6d06fe.chunk.js",
-    "static/js/2.cb6d06fe.chunk.js.map": "/react-portfolio/static/js/2.cb6d06fe.chunk.js.map",
+    "static/js/2.baf59994.chunk.js": "/react-portfolio/static/js/2.baf59994.chunk.js",
+    "static/js/2.baf59994.chunk.js.map": "/react-portfolio/static/js/2.baf59994.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/2.964f5836.chunk.css.map": "/react-portfolio/static/css/2.964f5836.chunk.css.map",
-    "static/css/main.846e8782.chunk.css.map": "/react-portfolio/static/css/main.846e8782.chunk.css.map",
-    "static/js/2.cb6d06fe.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.cb6d06fe.chunk.js.LICENSE.txt",
-    "static/media/True-Crime.75cc401f.png": "/react-portfolio/static/media/True-Crime.75cc401f.png",
-    "static/media/caption-me.f25b4f09.png": "/react-portfolio/static/media/caption-me.f25b4f09.png",
+    "static/css/main.83ea1e73.chunk.css.map": "/react-portfolio/static/css/main.83ea1e73.chunk.css.map",
+    "static/js/2.baf59994.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.baf59994.chunk.js.LICENSE.txt",
+    "static/media/True-Crime.809f2cb6.png": "/react-portfolio/static/media/True-Crime.809f2cb6.png",
+    "static/media/caption-me.d9ee53a7.png": "/react-portfolio/static/media/caption-me.d9ee53a7.png",
     "static/media/me.57685930.jpeg": "/react-portfolio/static/media/me.57685930.jpeg",
-    "static/media/star-wars-quiz.13401064.png": "/react-portfolio/static/media/star-wars-quiz.13401064.png"
+    "static/media/star-wars-quiz.816e8c0e.png": "/react-portfolio/static/media/star-wars-quiz.816e8c0e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.37b83d9e.js",
     "static/css/2.964f5836.chunk.css",
-    "static/js/2.cb6d06fe.chunk.js",
-    "static/css/main.846e8782.chunk.css",
-    "static/js/main.0807bf7d.chunk.js"
+    "static/js/2.baf59994.chunk.js",
+    "static/css/main.83ea1e73.chunk.css",
+    "static/js/main.e4f4e0fc.chunk.js"
   ]
 }
