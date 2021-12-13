@@ -15,7 +15,7 @@ function Home() {
         <div className="welcome-container">
           <div className="text home-wrapper">
           <ScrollAnimation animateIn="animate__slideInRight" animateOut="animate__slideOutLeft" duration={duration} offset={offSet}><span id="first">Hello, I'm </span>Jack Theisen</ScrollAnimation>
-            <ScrollAnimation animateIn="animate__slideInLeft" animateOut="animate__slideOutRight" duration={duration} offset={offSet}><span id="first">I'm a</span> Full Stack Web Developer</ScrollAnimation>
+            <ScrollAnimation animateIn="animate__slideInLeft" animateOut="animate__slideOutRight" duration={duration} offset={offSet}><span id="first">I'm a</span> Front End Web Developer</ScrollAnimation>
           </div>
           <div className="text home-wrapper">
           </div>
