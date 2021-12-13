@@ -25,13 +25,13 @@ function NavTabs({ currentPage, handlePageChange }) {
       </button> */}
       <div className="collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="hover resume" href="#Resume"
             onClick={() => handlePageChange("Resume")} 
             >
               Resume
             </a>
-          </li>
+          </li> */}
           <li className="nav-item hi-container">
             <a href="mailto:jackschoolbiz@gmail.com?subject=Email from Portfolio">
             <button className="hi">

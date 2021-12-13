@@ -1,5 +1,5 @@
 import React from 'react';
-import '../resume.css';
+import './resume.css';
 
 // export function setNavnone() {
 // // document.getElementsByClassName('hi-container')[0].style.setProperty("display", "none");
@@ -15,23 +15,25 @@ export default function Blog() {
     <div className='page-container'>
       <div className='resume-container'>
         <div className='sidebar'>
-          <ul><h3>Core Technologies:</h3>
+          <div className='technologies'>
+          <h3>Core Technologies:</h3>
           <li>test</li>
           <li>test</li>
           <li>test</li>
           <li>test</li>
           <li>test</li>
           <li>test</li>
-          </ul>
+          </div>
           <br></br>
-          <ul><h3>Others:</h3>
+          <div className='Others'>
+          <h3>Others:</h3>
           <li>test</li>
           <li>test</li>
           <li>test</li>
           <li>test</li>
           <li>test</li>
           <li>test</li>
-          </ul>
+          </div>
 
         </div>
         <div className='main-content'>

@@ -3,7 +3,7 @@ import NavTabs from './NavTabs';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Resume from './pages/Resume';
+import Resume from './pages/Resume/Resume';
 // import { setNavnone, setNav } from './pages/Resume';
 
 export default function PortfolioContainer() {

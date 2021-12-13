@@ -23,7 +23,7 @@ function Home() {
       </div>
       <About />
       <Projects />
-      <Contact id="Contact"/>
+      {/* <Contact id="Contact"/> */}
 
     <div className="wrapper">
 	    <ul className="social-icons icon-circle icon-rotate list-unstyled list-inline"> 

@@ -29,3 +29,35 @@
     font-weight: 700;
     width: 30%;
   }
+
+  @media only screen and (max-width: 768px) {}
+
+  @media only screen and (max-width: 614px) {
+
+    br{
+      display: none;
+    }
+
+    .resume-container{
+      flex-direction: column;
+      justify-content: start;
+
+      width: 100%;
+    }
+
+    .sidebar{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    li{
+      display: flex;
+      flex-direction: row;
+      width: min-content;
+    }
+
+    .others{
+
+    }
+  }
