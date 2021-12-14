@@ -747,15 +747,23 @@ h1 {
 
   .btn-container{
     width: 100%;
+    height: 35;
+  }
+
+  .btn-container .projects-container img{
+    height: 40vh;
   }
 
   .hover-elements{
     background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+
   }
 
   .overlay {
     display: block;
     background: rgba(0, 0, 0, 0.4);
+    height: 0vh !important;
   }
 
   .btn-container:hover .overlay{
