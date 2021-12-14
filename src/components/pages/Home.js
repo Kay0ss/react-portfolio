@@ -4,6 +4,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
+import "animate.css";
 
 let offSet = 50;
 let duration = 1;
@@ -13,12 +14,12 @@ function Home() {
     <div>
       <div className="parallax">
         <div className="welcome-container">
-          <div className="text home-wrapper">
+          <div className="text home-wrapper slideIn">
           <ScrollAnimation animateIn="animate__slideInRight" animateOut="animate__slideOutLeft" duration={duration} offset={offSet}><span id="first">Hello, I'm </span>Jack Theisen</ScrollAnimation>
             <ScrollAnimation animateIn="animate__slideInLeft" animateOut="animate__slideOutRight" duration={duration} offset={offSet}><span id="first">I'm a</span> Front End Web Developer</ScrollAnimation>
+
           </div>
-          <div className="text home-wrapper">
-          </div>
+
         </div>
       </div>
       <About />

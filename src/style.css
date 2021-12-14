@@ -145,6 +145,10 @@ Body::-webkit-scrollbar-thumb {
 
 /* ----landing page---------------------------------------------------------------------------------*/
 
+.mobile-title{
+  display: none;
+}
+
 .text {
   width: 100vw;
   font-family: verdana;
@@ -332,10 +336,8 @@ Body::-webkit-scrollbar-thumb {
 
 .btn-container {
   position: relative;
-  /* display: flex; */
   justify-content: center;
   flex-direction: column;
-  /* align-items: center; */
   width: 32%;
   height: min-content;
 }
@@ -632,12 +634,6 @@ h1 {
   
 }
 
-
-/* -----------------------RESUME PAGE------------------------------------- */
-
-
-
-
 /* --------------------Media Queries--------------------------------- */
 
 @media only screen and (max-width: 768px) {
@@ -657,22 +653,6 @@ h1 {
 
   .projects-container {
     padding-bottom: 30%;
-  }
-
-  .title {
-    display: none;
-  }
-
-  .proj-bio {
-    display: none;
-  }
-
-  a .button {
-    display: none;
-  }
-
-  .overlay {
-    display: none;
   }
 
   .recent-bio {
@@ -710,12 +690,34 @@ h1 {
 @media only screen and (max-width: 614px) {
   
   .welcome-container{
-    top: 30vh;
-    /* overflow-x: hidden; */
+    top: 20vh;
+    align-items: center;
+    justify-content: center;
   }
   
   .text {
     display: inline;
+  }
+
+  .mobile-title{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20%;
+    font-size: 23px !important;
+    color: rgb(211, 211, 211) !important;
+    text-shadow: 1px 1px 1px #838383, 1px 2px 1px #838383, 1px 10px 6px rgba(16, 16, 16, 0.4),
+    1px 16px 20px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+  }
+
+
+  .mobile-title{
+    display: block;
+    width: 94vw;
+    font-size: 2em;
+    height: min-content;
+    margin: auto;
+    color:rgb(211, 211, 211);
+    font-family: Verdana;
   }
 
 
@@ -728,17 +730,44 @@ h1 {
     white-space: nowrap;
   }
 
-  .btn-container{
-    width: 47%;
+  .title{
+    width: 100%;
+    font-size: 8vw;
+    opacity: 1;
   }
 
-  .title{
-    width: 20%;
+  .proj-bio{
+    display: none;
   }
 
   .projects-container{
     padding-bottom: 30%;
+    flex-direction: column;
   }
+
+  .btn-container{
+    width: 100%;
+  }
+
+  .hover-elements{
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .btn-container:hover .overlay{
+    background: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .button{
+    opacity: 1;
+    background: #f64c72;
+  }
+
+  
 
   .contact-container{
     width: 80%;
