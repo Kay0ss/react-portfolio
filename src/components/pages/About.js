@@ -30,6 +30,7 @@ function About(props) {
             alt="profile of me"
           />
           {/* </ScrollAnimation> */}
+
       </div>
   );
 }

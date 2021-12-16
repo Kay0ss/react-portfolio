@@ -238,7 +238,7 @@ Body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: row;
   padding-top: 40px;
-  padding-bottom: 22em;
+  padding-bottom: 3em;
   border-bottom: 0px;
 }
 
@@ -285,6 +285,65 @@ Body::-webkit-scrollbar-thumb {
 .highlight {
   color: #f64c72;
 }
+/* -------------------Skills-------------------------------------------------------------- */
+.skills-section{
+  background-color: #2f2fa2;
+  height: 50vh;
+}
+
+.skills-container{
+  padding-top: 30px;
+  width: 80vw;
+  height: 13vh;
+  margin: auto;
+  background-color: #2f2fa2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7%;
+}
+
+.html5, .css3, .js, .react, .git, .sass, .bootstrap{
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.html5:hover, .css3:hover, .js:hover, .react:hover, .git:hover, .sass:hover, .bootstrap:hover{
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+}
+
+.html5{
+  color: rgb(205	51	28);
+
+}
+.html5:hover{
+}
+.css3{
+  color: rgb(20	87	157);	
+}
+.js{
+  color: rgb(221	200	59);
+}
+.bootstrap{
+  color: rgb(79	41	123);
+}
+.git{
+  color: rgb(0	0	0	)	;
+}
+.react{
+  color: rgb(78	196	234	);
+} 
+.sass{
+  color: rgb(179	75	127	);
+}
+
 
 /* --------------- Projects-------------------------------------------------------------- */
 
@@ -773,6 +832,7 @@ h1 {
   .button{
     opacity: 1;
     background: #f64c72;
+    font-weight: bold;
   }
 
   

@@ -2,6 +2,7 @@ import React from "react";
 import Projects from "../pages/Projects";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import Skills from "../pages/Skills";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 import "animate.css";
@@ -23,6 +24,7 @@ function Home() {
         </div>
       </div>
       <About />
+      <Skills />
       <Projects />
       {/* <Contact id="Contact"/> */}
 
