@@ -519,88 +519,11 @@ a a:hover,
   background-color: #2f2fa2;
 }
 
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #2f2fa2;
-  width: 48%;
-  margin: auto;
-}
-
 
 h1 {
   text-align: center;
   padding-bottom: 15px;
   color: rgb(211, 211, 211);
-}
-
-.submitting{
-  color:rgb(134, 134, 134);
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.contact-container input {
-  font-size: 20px;
-  font-weight: 300;
-  width: 49.5%;
-  margin-bottom:8px;
-  padding: 6px;
-  height: 40px;
-  /* padding-right: 6px; */
-  border-radius: 8px;
-  border: 2px solid rgb(134, 134, 134);
-  
-}
-
-.row{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-  width: 100%;
-  --bs-gutter-x: 0 !important;
-}
-
-#choices {
-  font-size: 20px;
-  font-weight: 300;
-  width: 100%;
-  padding: 6px;
-  margin: auto;
-  margin-bottom: 8px;
-  border-radius: 8px;
-  border: 2px solid rgb(134, 134, 134);
-}
-
-.contact-container textarea{
-  font-size: 20px;
-  font-weight: 300;
-  width: 100%;
-  padding: 6px;
-  margin: auto;
-  border-radius: 8px;
-  border: 2px solid rgb(134, 134, 134);
-}
-
-.scroll {
-  text-align: center;
-  background-color: #2f2fa2;
-  font-size: 50px;
-  font-weight: 700;
-}
-
-#submit{
-  width: 30%;
-  margin: auto;
-  padding: auto;
-  height: min-content;
-}
-
-#submit:hover{
-  background-color: #acabab;
 }
 
 /* -------------FOOTER---------------- */
@@ -680,7 +603,7 @@ h1 {
 }
  
 
-.social-icons .fa-dribbble{background-color:#F46899;}  
+.social-icons .fa-twitter{background-color: rgb(28, 133, 235);}  
 .social-icons .fa-github,.social-icons{background-color:#070709;} 
 .social-icons .fa-linkedin,.social-icons{background-color:#0085AE;} 
 

@@ -26,11 +26,11 @@ function Home() {
       <About />
       <Skills />
       <Projects />
-      {/* <Contact id="Contact"/> */}
+      <Contact id="Contact"/>
 
     <div className="wrapper">
 	    <ul className="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
-	      <li> <a href="https://dribbble.com/Jack_T" target="_blank" rel="noreferrer"><i className="fa fa-dribbble"></i></a></li> 
+	      <li> <a href="https://twitter.com/WebDevCarGuy" target="_blank" rel="noreferrer"><i className="fa fa-twitter"></i></a></li> 
 	      <li> <a href="https://github.com/Kay0ss" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a></li> 
 	      <li> <a href="https://www.linkedin.com/in/jacktheisen/" rel="noreferrer"target="_blank"><i className="fa fa-linkedin"></i></a></li>
 	  	</ul>

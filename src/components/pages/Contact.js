@@ -1,89 +1,108 @@
 import React, { useReducer, useState } from "react";
-
-const formReducer = (state, event) => {
-  if(event.reset) {
-    return {
-      fname: '',
-      choices: 0,
-      lname: '',
-      message: '',
-    }
-  }
-  return {
-    ...state,
-    [event.name]: event.value
-  }
-}
-
+import emailjs from "emailjs-com";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import Box from "@mui/material/Box";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
 
 function Contact() {
-  const [formData, setFormData] = useReducer(formReducer, {count: 100,});
-  const [submitting, setSubmitting] = useState(false);
-  
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSubmitting(true);
-    console.log()
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-
-    setTimeout(() => {
-      setSubmitting(false);
-      setFormData({
-        reset: true
-      })
-    }, 3000)
+    emailjs
+      .sendForm(
+        "gmail",
+        "portfolio_contact",
+        e.target,
+        "user_uKu6szXX313eJSTysKDfU"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
-
-  const handleChange = event => {
-    setFormData({
-      name: event.target.name,
-      value: event.target.value,
-    });
-  }
 
   return (
     <div className="color">
-      <form onSubmit={handleSubmit} className="contact-container">
+      <div>
         <h1>Lets work together!</h1>
-        {submitting && 
-        <div className="submitting"> Submitting Form...</div>
-        }
-        <div className="row">
-          <input
+      </div>
+      <FormControl
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+          margin: 'auto',
+          width: '20%',
+          background: 'lightgray',
+          borderRadius: '15px',
+          padding: '20px',
+          "& .MuiTextField-root": { m: 1, width: "25ch" },
+
+        }}
+        noValidate
+        autoComplete="off"
+        onSubmit={sendEmail}>
+          
+          <TextField
+            id="outlined-basic"
             name="fname"
-            className="name-input"
-            placeholder="First name"
-            onChange={handleChange}
-            value={formData.fname || ''}
-            disabled={submitting}
+            label="First name"
+            variant="outlined"
+            required
           />
-          <input
+          <TextField
+            fullWidth
+            id="outlined-basic"
             name="lname"
-            className="name-input"
-            placeholder="Last name"
-            onChange={handleChange}
-            value={formData.lname || ''}
-            disabled={submitting}
+            label="Last name"
+            variant="outlined"
+            required 
+            
           />
-        </div>
-        <select id="choices" name="choices" onChange={handleChange} value={formData.choices || ''} disabled={submitting}>
-          <option value="project" defaultValue>
-            Project
-          </option>
-          <option value="inquire">Inquiry</option>
-        </select>
-        <textarea
+          <TextField
+            id="outlined-basic"
+            name="email"
+            label="Email"
+            variant="outlined"
+            required
+            />
+          
+        <FormControl sx={{ minWidth: 223}}>
+          <InputLabel id="subject-label">Subject</InputLabel>
+        <Select
+        // labelId="subject-label"
+        label="Subject"
+          name="choice"
+          variant="outlined"
+          required
+        >
+          <MenuItem value="project inquiry">Project Inquiry or Idea</MenuItem>
+          <MenuItem value="general inquiry">General Inquiry</MenuItem>
+        </Select>
+        </FormControl>
+        <TextField
+          sx={{
+            overflow: 'scroll'
+          }}
+          id="outlined-basic"
           name="message"
-          rows="6"
-          cols="30"
-          placeholder="Your message here"
-          onChange={handleChange}
-          value={formData.message || ''}
-          disabled={submitting}
-        ></textarea>
+          label="Your message here"
+          variant="outlined"
+        ></TextField>
         <br></br>
-        <input id="submit" type="submit" disabled={submitting}/>
-      </form>
+        <Button type="submit" value="Send Message" variant="contained">
+          Submit
+        </Button>
+      </FormControl>
     </div>
   );
 }
