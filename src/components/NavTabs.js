@@ -1,47 +1,23 @@
 import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 // import Button from "react-bootstrap/button";
 
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar">
-      <a
-        className="brand"
-        href="#home"
-        onClick={() => handlePageChange("Home")}
-      >
-        JT
-      </a>
-      {/* <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon">😀</span>
-      </button> */}
-      <div className="collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          {/* <li className="nav-item">
-            <a className="hover resume" href="#Resume"
-            onClick={() => handlePageChange("Resume")} 
-            >
-              Resume
-            </a>
-          </li> */}
-          <li className="nav-item hi-container">
-            <a href="mailto:jackschoolbiz@gmail.com?subject=Email from Portfolio">
-            <button className="hi">
-              <span>Say Hello</span>
-            </button></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div className="nav">
+        <div>brand</div>
+        <div>logo</div>
+        <div>logo</div>
+        <div>logo</div>
+    </div>
   );
-}
+};
 
 export default NavTabs;
+
+{/* <li> <a href="https://www.linkedin.com/in/jacktheisen/" rel="noreferrer"target="_blank"><i className="fa fa-linkedin"></i></a></li>
+<li> <a href="https://twitter.com/WebDevCarGuy" target="_blank" rel="noreferrer"><i className="fa fa-twitter"></i></a></li> 
+<li> <a href="https://github.com/Kay0ss" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a></li>  */}

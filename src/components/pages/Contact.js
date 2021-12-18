@@ -8,6 +8,8 @@ import Box from "@mui/material/Box";
 import FormControl from "@mui/material/FormControl";
 import Alert from "@mui/material/Alert";
 import Paper from "@mui/material/Paper";
+import { ThemeProvider } from "styled-components";
+import { purple } from "@mui/material/colors";
 
 function Contact() {
   // const [name, setName] = useState('')
@@ -40,31 +42,18 @@ function Contact() {
 
   return (
     <div className="color">
-      <div>
+      {/* <div>
         <h1>Contact</h1>
-      </div>
+        <br></br>
+        <h3>Address</h3>
+        <p>Minneapolis</p>
+        <br></br>
+
+
+
+      </div> */}
       <form onSubmit={sendEmail} className="contact-container">
         <h1 className="contactFormTitle">Contact Form</h1>
-        {/* <FormControl
-      component="form"
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          flexDirection: 'row',
-          margin: 'auto',
-          width: '90%',
-          minWidth: '228px',
-          background: 'lightgray',
-          borderRadius: '15px',
-          padding: '20px',
-          "& .MuiTextField-root": { m: 1, width: "47ch", paddingBottom: '10px'},
-          // "& .MuiFormControl-root": { m: 1, width: "38ch"},
-          "& .MuiButton-root": { m: 1, width: "30ch"},
-        }}
-        noValidate
-        autoComplete="off"
-        onSubmit={sendEmail}
-        > */}
 
         <TextField
           sx={{
@@ -104,6 +93,13 @@ function Contact() {
         ></TextField>
         <br></br>
         <Button
+        sx={{ 
+          color: "black",
+          backgroundColor: "#e9e9e9",
+          '&:hover': {
+            backgroundColor: "#ababab"
+          }
+          }}
           type="submit"
           value="Send Message"
           variant="outlined"

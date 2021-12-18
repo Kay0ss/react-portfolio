@@ -13,31 +13,29 @@ let duration = 1;
 function Home() {
   return (
     <div>
-      <div className="parallax">
+      {/* <div className="parallax">
         <div className="welcome-container">
           <div className="text home-wrapper slideIn">
-          <ScrollAnimation animateIn="animate__slideInRight" animateOut="animate__slideOutLeft" duration={duration} offset={offSet}><span id="first">Hello, I'm </span>Jack Theisen</ScrollAnimation>
-            <ScrollAnimation animateIn="animate__slideInLeft" animateOut="animate__slideOutRight" duration={duration} offset={offSet}><span id="first">I'm a</span> Front End Web Developer</ScrollAnimation>
+          <div><span id="first">Hello, I'm </span>Jack Theisen</div>
+            <div><span id="first">I'm a</span> Front End Web Developer</div>
 
           </div>
 
         </div>
+      </div> */}
+      <div className="landing">
+        <div className="jack-cont">
+        <h1 className="jack">Jack</h1>
+        <h1 className="theisen">Theisen</h1></div>
+        <div className="descript"><p>Junior Front End Web Developer</p></div>
       </div>
       <About />
       <Skills />
       <Projects />
-      <Contact id="Contact"/>
+      <Contact id="Contact" />
 
-    <div className="wrapper">
-	    <ul className="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
-	      <li> <a href="https://twitter.com/WebDevCarGuy" target="_blank" rel="noreferrer"><i className="fa fa-twitter"></i></a></li> 
-	      <li> <a href="https://github.com/Kay0ss" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a></li> 
-	      <li> <a href="https://www.linkedin.com/in/jacktheisen/" rel="noreferrer"target="_blank"><i className="fa fa-linkedin"></i></a></li>
-	  	</ul>
-      </div>
       <div className="copyright">Made with love🖤 © Jack Theisen</div>
     </div>
-
   );
 }
 
