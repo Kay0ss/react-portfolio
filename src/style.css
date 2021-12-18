@@ -514,11 +514,27 @@ a a:hover,
 
 .color {
   /* padding-top: 20%; */
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+
+  height: 50vh;
   overflow: hidden;
   background-color: #2f2fa2;
 }
 
+.contact-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 32em;
+  height: min-content;
+  min-width: 228px;
+  background: #333;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 4px 4px 8px;
+}
 
 h1 {
   text-align: center;
@@ -526,25 +542,23 @@ h1 {
   color: rgb(211, 211, 211);
 }
 
-.contact-container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  width: 28em;
-  min-width: 228px;
-  background: lightgray;
-  border-radius: 15px;
-  padding: 20px;
+.contactFormTitle{
+  color: #606060;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
+
+
 .MuiTextField-root{
-  width: 43ch;
-  padding-bottom: 10px;
+  width: 38ch;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .MuiButton-root{
   width: 30ch;
+  padding: 20px;
 }
 
 /* -------------FOOTER---------------- */

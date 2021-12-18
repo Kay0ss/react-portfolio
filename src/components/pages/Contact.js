@@ -7,6 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
 import FormControl from "@mui/material/FormControl";
 import Alert from "@mui/material/Alert";
+import Paper from "@mui/material/Paper";
 
 function Contact() {
   // const [name, setName] = useState('')
@@ -17,7 +18,6 @@ function Contact() {
     // if (name && email) {
     //   console.log(name, email)
     // }
-
 
     emailjs
       .sendForm(
@@ -36,15 +36,16 @@ function Contact() {
       );
     e.target.reset();
   };
-  let myRef = {}
+  let myRef = {};
 
   return (
     <div className="color">
       <div>
-        <h1>Lets work together!</h1>
+        <h1>Contact</h1>
       </div>
-      <div className="contact-container" onSubmit={sendEmail}>
-      {/* <FormControl
+      <form onSubmit={sendEmail} className="contact-container">
+        <h1 className="contactFormTitle">Contact Form</h1>
+        {/* <FormControl
       component="form"
         sx={{
           display: 'flex',
@@ -64,30 +65,37 @@ function Contact() {
         autoComplete="off"
         onSubmit={sendEmail}
         > */}
-          
-          <TextField
-            // onChange={(e) => setName(e.target.value)}
-            id="outlinedBasic"
-            name="name"
-            label="Your Name"
-            variant="standard"
-            autoComplete="none"
-            required
-            inputRef={myRef}
-          />
-          <TextField
-            // onChange={(e) => setEmail(e.target.value)}
-            id="outlinedBasic"
-            name="email"
-            type="email"
-            label="Email"
-            variant="standard"
-            autoComplete="none"
-            required
-            inputRef={myRef}
-            />
-          
+
         <TextField
+          sx={{
+            marginBottom: "1rem",
+          }}
+          id="outlinedBasic"
+          name="name"
+          label="Your Name"
+          variant="standard"
+          autoComplete="none"
+          required
+          // inputRef={myRef}
+        />
+        <TextField
+          sx={{
+            marginBottom: "1rem",
+          }}
+          id="outlinedBasic"
+          name="email"
+          type="email"
+          label="Email"
+          variant="standard"
+          autoComplete="none"
+          required
+          // inputRef={myRef}
+        />
+
+        <TextField
+          sx={{
+            marginBottom: "15px",
+          }}
           multiline
           id="outlined-basic"
           name="message"
@@ -95,11 +103,20 @@ function Contact() {
           variant="standard"
         ></TextField>
         <br></br>
-        <Button type="submit" value="Send Message" variant="outlined" onClick={() => {myRef.current.reportValidity()}}>
+        <Button
+          type="submit"
+          value="Send Message"
+          variant="outlined"
+          value="send"
+          // onClick={() => {
+          //   myRef.current.reportValidity(); 
+          // }}
+        >
           Send
         </Button>
-      {/* </FormControl> */}
-      </div>
+        
+        {/* </FormControl> */}
+      </form>
     </div>
   );
 }
