@@ -6,11 +6,18 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
 import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
+import Alert from "@mui/material/Alert";
 
 function Contact() {
+  // const [name, setName] = useState('')
+  // const [email, setEmail] = useState('')
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // if (name && email) {
+    //   console.log(name, email)
+    // }
+
 
     emailjs
       .sendForm(
@@ -29,80 +36,70 @@ function Contact() {
       );
     e.target.reset();
   };
+  let myRef = {}
 
   return (
     <div className="color">
       <div>
         <h1>Lets work together!</h1>
       </div>
-      <FormControl
+      <div className="contact-container" onSubmit={sendEmail}>
+      {/* <FormControl
+      component="form"
         sx={{
           display: 'flex',
           alignItems: 'center',
-          flexDirection: 'column',
+          flexDirection: 'row',
           margin: 'auto',
-          width: '20%',
+          width: '90%',
+          minWidth: '228px',
           background: 'lightgray',
           borderRadius: '15px',
           padding: '20px',
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
-
+          "& .MuiTextField-root": { m: 1, width: "47ch", paddingBottom: '10px'},
+          // "& .MuiFormControl-root": { m: 1, width: "38ch"},
+          "& .MuiButton-root": { m: 1, width: "30ch"},
         }}
         noValidate
         autoComplete="off"
-        onSubmit={sendEmail}>
+        onSubmit={sendEmail}
+        > */}
           
           <TextField
-            id="outlined-basic"
-            name="fname"
-            label="First name"
-            variant="outlined"
+            // onChange={(e) => setName(e.target.value)}
+            id="outlinedBasic"
+            name="name"
+            label="Your Name"
+            variant="standard"
+            autoComplete="none"
             required
+            inputRef={myRef}
           />
           <TextField
-            fullWidth
-            id="outlined-basic"
-            name="lname"
-            label="Last name"
-            variant="outlined"
-            required 
-            
-          />
-          <TextField
-            id="outlined-basic"
+            // onChange={(e) => setEmail(e.target.value)}
+            id="outlinedBasic"
             name="email"
+            type="email"
             label="Email"
-            variant="outlined"
+            variant="standard"
+            autoComplete="none"
             required
+            inputRef={myRef}
             />
           
-        <FormControl sx={{ minWidth: 223}}>
-          <InputLabel id="subject-label">Subject</InputLabel>
-        <Select
-        // labelId="subject-label"
-        label="Subject"
-          name="choice"
-          variant="outlined"
-          required
-        >
-          <MenuItem value="project inquiry">Project Inquiry or Idea</MenuItem>
-          <MenuItem value="general inquiry">General Inquiry</MenuItem>
-        </Select>
-        </FormControl>
         <TextField
-          sx={{
-            overflow: 'scroll'
-          }}
+          multiline
           id="outlined-basic"
           name="message"
-          label="Your message here"
-          variant="outlined"
+          label="Message"
+          variant="standard"
         ></TextField>
         <br></br>
-        <Button type="submit" value="Send Message" variant="contained">
-          Submit
+        <Button type="submit" value="Send Message" variant="outlined" onClick={() => {myRef.current.reportValidity()}}>
+          Send
         </Button>
-      </FormControl>
+      {/* </FormControl> */}
+      </div>
     </div>
   );
 }

@@ -526,6 +526,27 @@ h1 {
   color: rgb(211, 211, 211);
 }
 
+.contact-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 28em;
+  min-width: 228px;
+  background: lightgray;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.MuiTextField-root{
+  width: 43ch;
+  padding-bottom: 10px;
+}
+
+.MuiButton-root{
+  width: 30ch;
+}
+
 /* -------------FOOTER---------------- */
 
 .wrapper{
