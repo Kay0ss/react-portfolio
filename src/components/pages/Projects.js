@@ -6,12 +6,8 @@ import trueCrime from "../../images/True-Crime.png";
 
 export default function Projects() {
   return (
-    <div>
-      <div className="recent-title">My Recent Work</div>
-      <div className="recent-bio">
-        Here are a few of the projects I've worked on recently. Want to see
-        more? <a href="mailto:jackschoolbiz@gmail.com"> Email Me.</a>
-      </div>
+    <div className="projects">
+      <div className="projects-title">Projects</div>
       <div className="projects-container">
         <div className="btn-container">
           <img src={trueCrime} alt="True Crime app"></img>

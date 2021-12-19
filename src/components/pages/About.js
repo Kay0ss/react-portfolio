@@ -6,8 +6,8 @@ import "animate.css/animate.min.css"
 function About(props) {
   return (
     <div className="about-section">
+      <h1 className="about-title">About</h1>
         <div className="about">
-        {/* <ScrollAnimation animateIn="animate__fadeIn" duration="1" offset="150" delay="1" animateOnce="true"> */}
           <p id="grabber">
             <span className="highlight">I believe</span> there are so many
             things in this world that are yet to be done and so many new{" "}
@@ -16,9 +16,6 @@ function About(props) {
             <span className="highlight">live </span>on{" "}
             <span className="highlight">forever.</span>
           </p>
-          {/* </ScrollAnimation> */}
-        </div>
-        {/* <ScrollAnimation animateIn="animate__slideInLeft" animateOut="animate__slideOutRight" duration="1" offset="150" delay="1"> */}
           <Image
             fluid
             // width="15%"
@@ -29,7 +26,7 @@ function About(props) {
             className="img-round"
             alt="profile of me"
           />
-          {/* </ScrollAnimation> */}
+        </div>
 
       </div>
   );
