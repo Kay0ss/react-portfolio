@@ -5,6 +5,8 @@
 }
 :root {
   --text: rgb(211, 211, 211);
+  --font-size-m: 50%;
+  --font-family-roboto: "Roboto";
 }
 
 body {
@@ -37,141 +39,68 @@ Body::-webkit-scrollbar-thumb {
   flex-direction: column;
   background-color: #2f2fa2;
   position: fixed;
-  top: 0;
+  column-gap: 10px;
+  bottom: 10px;
+  left: 20px;
 }
 
-nav ul {
+/* nav ul {
   list-style: none;
   display: flex;
   color: white;
+  column-gap: 10px;
+} */
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+  display: block;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 3vw;
 }
+
+.list-unstyled div {
+  padding-bottom: 10px;
+  color: #f5f5f5;
+}
+
+/* .Twitter {
+  color: rgb(28, 133, 235);
+}
+.Git {
+  color: #090909;
+}
+.Linkedin {
+  color: #0085ae;
+} */
 
 /* ----landing page---------------------------------------------------------------------------------*/
 
-.landing {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+.landing{
   background-color: #2f2fa2;
-  height: 100vh;
-  padding-bottom: 12em;
 }
 
-.jack-cont {
-  display: flex;
-  flex-direction: column;
-  /* height: 8em; */
-  gap: -4vh;
+.hero{
+  margin-top: 34px;
+  width: 99vw;
+  height: 100%;
+  padding-bottom: 10%;
 }
 
-.jack {
-  width: min-content;
-  height: 19rem;
-  justify-content: flex-end;
-  -webkit-text-fill-color: #ffffff;
-  font-size: 25vw;
-  font-weight: 700;
-  z-index: 1;
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10); }
 }
-
-.theisen {
-  width: min-content;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #f64c72;
-  font-size: 26vw;
-  font-weight: 700;
-}
-
-.descript{
-  color: lightgray;
-  text-align: end;
-  font-weight: 700;
-  font-size: 3vw;
-  margin-right: 5px;
-  margin-top: -13vh;
-}
-
-.mobile-title {
-  display: none;
-}
-
-.text {
-  width: 100vw;
-  font-family: verdana;
-  font-size: 3em;
-  text-align: center;
-  font-weight: 700;
-  color: #f64c72;
-  text-shadow: 1px 1px 1px #8f4353, 1px 2px 1px #8f4353, 1px 3px 1px #8f4353,
-    1px 4px 1px #8f4353, 1px 5px 1px #8f4353, 1px 6px 1px #8f4353,
-    1px 7px 1px #8f4353, 1px 18px 6px rgba(16, 16, 16, 0.4),
-    1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
-}
-
-#first {
-  font-family: Verdana;
-  font-weight: 700;
-  color: rgb(211, 211, 211);
-  text-shadow: 1px 1px 1px rgb(134, 134, 134), 1px 2px 1px rgb(134, 134, 134),
-    1px 3px 1px rgb(134, 134, 134), 1px 4px 1px rgb(134, 134, 134),
-    1px 5px 1px rgb(134, 134, 134), 1px 6px 1px rgb(134, 134, 134),
-    1px 7px 1px rgb(134, 134, 134), 1px 18px 6px rgba(16, 16, 16, 0.4),
-    1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
-}
-
-.text2 {
-  width: 100vw;
-  font-family: verdana;
-  font-size: 3em;
-  text-align: center;
-  font-weight: 700;
-  color: #f64c72;
-  text-shadow: 1px 1px 1px #8f4353, 1px 2px 1px #8f4353, 1px 3px 1px #8f4353,
-    1px 4px 1px #8f4353, 1px 5px 1px #8f4353, 1px 6px 1px #8f4353,
-    1px 7px 1px #8f4353, 1px 18px 6px rgba(16, 16, 16, 0.4),
-    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
-    1px 30px 60px rgba(16, 16, 16, 0.4);
-}
-
-.parallax {
-  background-color: #2f2fa2;
-  width: 100;
-  min-height: 95vh;
-  background-attachment: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-
-.welcome-container {
-  display: flex;
+.bounce {
   position: absolute;
-  height: 200px;
-  width: 100%;
-  top: 40vh;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.home-wrapper {
-  height: 80px;
-  width: 100%;
-}
-
-.scroll-downs {
-  position: fixed;
-  top: 87vh;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-
-  width: 34px;
-  height: 55px;
+  left: 49%;
+  top: 94%;
+  animation: bounce 1.5s;
+  /* animation-direction: alternate; */
+  animation-iteration-count: infinite;
 }
 
 /* ----About me----------------------------------------------------------------------------------------*/
@@ -518,101 +447,6 @@ h1 {
 }
 
 /* -------------FOOTER---------------- */
-
-.wrapper {
-  position: fixed;
-  position: -webkit-fixed;
-  top: 76vh;
-  background-color: #2f2fa2;
-  height: 13vh;
-  padding-left: 5px;
-}
-
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-.list-unstyled li {
-  /* display: block; */
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: 5vw;
-}
-
-.wrapper ul {
-  /* display: flex; */
-  justify-content: center;
-  flex-direction: column;
-  background-color: #2f2fa2;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.social-icons .fa {
-  font-size: 1.8em;
-}
-/* circle size */
-.social-icons .fa {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.social-icons.icon-circle .fa {
-  border-radius: 50%;
-}
-.social-icons.icon-rounded .fa {
-  border-radius: 5px;
-}
-.social-icons.icon-flat .fa {
-  border-radius: 0;
-}
-
-.social-icons .fa:hover,
-.social-icons .fa:active {
-  color: #fff;
-  -webkit-box-shadow: 1px 1px 3px #333;
-  -moz-box-shadow: 1px 1px 3px #333;
-  box-shadow: 1px 1px 3px #333;
-}
-.social-icons.icon-zoom .fa:hover,
-.social-icons.icon-zoom .fa:active {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.social-icons.icon-rotate .fa:hover,
-.social-icons.icon-rotate .fa:active {
-  -webkit-transform: scale(1.1) rotate(360deg);
-  -moz-transform: scale(1.1) rotate(360deg);
-  -ms-transform: scale(1.1) rotate(360deg);
-  -o-transform: scale(1.1) rotate(360deg);
-  transform: scale(1.1) rotate(360deg);
-}
-
-.social-icons .fa-twitter {
-  background-color: rgb(28, 133, 235);
-}
-.social-icons .fa-github,
-.social-icons {
-  background-color: #070709;
-}
-.social-icons .fa-linkedin,
-.social-icons {
-  background-color: #0085ae;
-}
 
 .copyright {
   text-align: center;

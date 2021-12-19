@@ -3,39 +3,27 @@ import Projects from "../pages/Projects";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Skills from "../pages/Skills";
-import ScrollAnimation from "react-animate-on-scroll";
+import landingPage from "../../images/landingpage.svg";
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css/animate.min.css";
 import "animate.css";
 
-let offSet = 50;
-let duration = 1;
-
 function Home() {
   return (
-    <div>
-      {/* <div className="parallax">
-        <div className="welcome-container">
-          <div className="text home-wrapper slideIn">
-          <div><span id="first">Hello, I'm </span>Jack Theisen</div>
-            <div><span id="first">I'm a</span> Front End Web Developer</div>
-
-          </div>
-
-        </div>
-      </div> */}
+    <>
       <div className="landing">
-        <div className="jack-cont">
-        <h1 className="jack">Jack</h1>
-        <h1 className="theisen">Theisen</h1></div>
-        <div className="descript"><p>Junior Front End Web Developer</p></div>
+        <img className="hero" src={landingPage} />
       </div>
+
+      <h1 class="bounce"><FontAwesomeIcon icon={ faAngleDoubleDown }></FontAwesomeIcon></h1>
       <About />
       <Skills />
       <Projects />
       <Contact id="Contact" />
 
       <div className="copyright">Made with love🖤 © Jack Theisen</div>
-    </div>
+    </>
   );
 }
 
