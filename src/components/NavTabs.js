@@ -10,11 +10,11 @@ import { faLinkedin, faGithubSquare, faTwitterSquare } from '@fortawesome/free-b
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className="nav">
-      <ul className="list-unstyled">
+      {/* <ul className="list-unstyled">
         <a href="https://www.linkedin.com/in/jacktheisen/" target="_blank"><div><FontAwesomeIcon icon={faLinkedin} size="2x" className="Linkedin"/></div></a>
         <a href="https://github.com/Kay0ss" target="_blank"><div><FontAwesomeIcon icon={faGithubSquare} size="2x" className="Git"/></div></a>
         <a href="https://twitter.com/WebDevCarGuy" target="_blank"><div><FontAwesomeIcon icon={faTwitterSquare} size="2x" className="Twitter"/></div></a>
-      </ul>
+      </ul> */}
     </div>
   );
 };
