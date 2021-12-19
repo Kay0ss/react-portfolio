@@ -11,15 +11,11 @@ import Paper from "@mui/material/Paper";
 import { ThemeProvider } from "styled-components";
 import { purple } from "@mui/material/colors";
 
-function Contact() {
-  // const [name, setName] = useState('')
-  // const [email, setEmail] = useState('')
+function Contact(props) {
+  const { classes } = props;
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    // if (name && email) {
-    //   console.log(name, email)
-    // }
 
     emailjs
       .sendForm(
@@ -42,16 +38,9 @@ function Contact() {
 
   return (
     <div className="color">
-      {/* <div>
-        <h1>Contact</h1>
-        <br></br>
-        <h3>Address</h3>
-        <p>Minneapolis</p>
-        <br></br>
-
-
-
-      </div> */}
+      <div className="contact-desc">
+        <h1>Say Hello👋🏻</h1>
+      </div>
       <form onSubmit={sendEmail} className="contact-container">
         <h1 className="contactFormTitle">Contact Form</h1>
 
@@ -59,12 +48,13 @@ function Contact() {
           sx={{
             marginBottom: "1rem",
           }}
-          id="outlinedBasic"
+          id="contact-text"
           name="name"
           label="Your Name"
           variant="standard"
           autoComplete="none"
           required
+          focused
           // inputRef={myRef}
         />
         <TextField
@@ -78,6 +68,7 @@ function Contact() {
           variant="standard"
           autoComplete="none"
           required
+          focused
           // inputRef={myRef}
         />
 
@@ -90,27 +81,29 @@ function Contact() {
           name="message"
           label="Message"
           variant="standard"
+          focused
         ></TextField>
         <br></br>
         <Button
-        sx={{ 
-          color: "black",
-          backgroundColor: "#e9e9e9",
-          '&:hover': {
-            backgroundColor: "#ababab"
-          }
+          sx={{
+            marginTop: "20px",
+            color: "black",
+            backgroundColor: "#e9e9e9",
+            "&:hover": {
+              backgroundColor: "#ababab",
+            },
           }}
           type="submit"
           value="Send Message"
           variant="outlined"
           value="send"
           // onClick={() => {
-          //   myRef.current.reportValidity(); 
+          //   myRef.current.reportValidity();
           // }}
         >
           Send
         </Button>
-        
+
         {/* </FormControl> */}
       </form>
     </div>
