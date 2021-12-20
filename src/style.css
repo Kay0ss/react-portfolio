@@ -377,13 +377,37 @@ a a:hover,
   align-items: center;
   flex-direction: column;
 
-  height: 50vh;
+  height: 60vh;
   overflow: hidden;
   background-color: #2f2fa2;
 }
 
 .contact-desc{
-  
+
+}
+
+.contact-desc h3 {
+  text-align: center;
+  color: white
+}
+
+#email{
+  padding-top: 20px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.contact-desc p {
+  text-align: center;
+  color: #f64c72;
+  margin-bottom: 0;
+}
+
+.follow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
 }
 
 .contact-container {
@@ -397,6 +421,7 @@ a a:hover,
   border-bottom-right-radius: 60px;
   border-top-left-radius: 60px;
   padding: 20px;
+  padding-top: 55px;
 }
 
 h1 {
@@ -610,7 +635,7 @@ h1 {
   .projects{
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     padding-top: 40px;
     padding-left: 10px;
   }

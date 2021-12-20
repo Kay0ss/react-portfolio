@@ -1,15 +1,9 @@
-import React, { useReducer, useState } from "react";
+import React from "react";
 import emailjs from "emailjs-com";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import Box from "@mui/material/Box";
-import FormControl from "@mui/material/FormControl";
-import Alert from "@mui/material/Alert";
-import Paper from "@mui/material/Paper";
-import { ThemeProvider } from "styled-components";
-import { purple } from "@mui/material/colors";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub, faTwitter, faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Contact(props) {
   const { classes } = props;
@@ -40,9 +34,19 @@ function Contact(props) {
     <div className="color">
       <div className="contact-desc">
         <h1>Say Hello👋🏻</h1>
+        <h3>I'm always open to some new projects or opportunities!</h3>
+        <p id="email">Email me at:</p>
+        <p>jackschoolbiz@gmail.com</p>
+        <p id="email">Follow me</p>
+        <div className="follow">
+        <a href="https://www.linkedin.com/in/jacktheisen/" target="_blank"><h1><FontAwesomeIcon icon={faLinkedin} size="sm"/></h1></a>
+        <a href="https://github.com/Kay0ss" target="_blank"><h1><FontAwesomeIcon icon={faGithub} size="sm"/></h1></a>
+        <a href="https://twitter.com/WebDevCarGuy" target="_blank"><h1><FontAwesomeIcon icon={faTwitter} size="sm"/></h1></a>
+        <a href="https://www.facebook.com/jack.the.isen13/" target="_blank"><h1><FontAwesomeIcon icon={faFacebookSquare} size="sm"/></h1></a>
+        <a href="https://www.instagram.com/jack_the_isen/" target="_blank"><h1><FontAwesomeIcon icon={faInstagram} size="sm"/></h1></a>
+        </div>
       </div>
       <form onSubmit={sendEmail} className="contact-container">
-        <h1 className="contactFormTitle">Contact Form</h1>
 
         <TextField
           sx={{
