@@ -1,13 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faSass, faBootstrap, faGit, faJs, faReact, faCss3Alt, faFigma } from '@fortawesome/free-brands-svg-icons';
+import skills from "../../images/Skills.svg";
 // import { react } from '@fortawesome/fontawesome-svg-core';
 
 
 function Skills(props){
     return (
         <div className="skills-section">
-        <div className="skills-title">Skills</div>
+        <img src={skills} className="skills-title" alt="skills"></img>
         <div className="skills-container">
         <h1><FontAwesomeIcon icon={faHtml5} size="2x" className="html5"/></h1>
         <h1><FontAwesomeIcon icon={faCss3Alt} size="2x" className="css3"/></h1>

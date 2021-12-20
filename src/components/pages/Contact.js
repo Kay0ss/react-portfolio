@@ -35,8 +35,8 @@ function Contact(props) {
       <div className="contact-desc">
         <h1>Say Hello👋🏻</h1>
         <h3>I'm always open to some new projects or opportunities!</h3>
-        <p id="email">Email me at:</p>
-        <p>jackschoolbiz@gmail.com</p>
+        <p id="email">Email me at</p>
+        <a href="mailto:jackshoolbiz@gmail.com">jackschoolbiz@gmail.com</a>
         <p id="email">Follow me</p>
         <div className="follow">
         <a href="https://www.linkedin.com/in/jacktheisen/" target="_blank"><h1><FontAwesomeIcon icon={faLinkedin} size="sm"/></h1></a>

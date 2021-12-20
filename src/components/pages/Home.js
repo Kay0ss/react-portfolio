@@ -22,7 +22,7 @@ function Home() {
       <Projects />
       <Contact id="Contact" />
 
-      <div className="copyright">Made with love🖤 © Jack Theisen</div>
+      <div className="copyright"> © 2021 Jack Theisen</div>
     </>
   );
 }

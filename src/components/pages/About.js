@@ -2,11 +2,12 @@ import React from "react";
 import Me from "../../images/me.jpeg";
 import Image from "react-bootstrap/Image";
 import "animate.css/animate.min.css"
+import about from "../../images/About.svg"
 
 function About(props) {
   return (
     <div className="about-section">
-      <h1 className="about-title">About</h1>
+      <img src={about} className="about-title" alt="about me"></img>
         <div className="about">
           <p id="grabber">
             <span className="highlight">I believe</span> there are so many
