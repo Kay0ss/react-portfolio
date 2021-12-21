@@ -201,7 +201,8 @@ Body::-webkit-scrollbar-thumb {
 .git:hover,
 .sass:hover,
 .bootstrap:hover,
-.figma:hover {
+.figma:hover,
+.node:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -306,8 +307,28 @@ Body::-webkit-scrollbar-thumb {
   padding: 25px;
 }
 
-.proj-bio a {
+.site-btn {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 8px;
+  width: 30%;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #f64c72;
+  border-radius: 10px;
+  transition: 0.1s ease-in-out;
+  box-shadow: 0 1px 18px rgba(255, 0, 130, 0.5);
+}
 
+.site-btn:hover {
+  color: black;
+}
+
+.site-btn:active {
+  transform: scale(0.9);
+  box-shadow: 0 1px 9px rgba(255, 0, 130, 0.5);
 }
 
 .project-right {
@@ -433,54 +454,6 @@ h1 {
 .MuiInputLabel-root {
   color: red;
 }
-
-/* .css-348fk2.Mui-focused {
-  color: white !important;
-}
-
-.css-mnn31 {
-  color: white !important;
-}
-
-.css-mnn31 {
-  color: white !important;
-}
-
-.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-  color: white !important;
-}
-
-.css-1480iag-MuiInputBase-root-MuiInput-root {
-  color: white !important;
-}
-
-.css-1wt0ykv::after {
-  border-bottom: 2px solid white !important;
-}
-
-.css-5xn5lu-MuiInputBase-root-MuiInput-root::after {
-  border-bottom: 2px solid white !important;
-}
-
-.css-10oer18 {
-  color: #f5f5f5 !important;
-}
-
-.css-1w19ck5::after {
-  border-bottom: 2px solid white;
-}
-
-.css-1480iag-MuiInputBase-root-MuiInput-root::after {
-  border-bottom: 2px solid white !important;
-}
-
-.css-5xn5lu-MuiInputBase-root-MuiInput-root::after {
-  border-bottom: 2px solid white !important;
-}
-
-.css-66dh3a-MuiInputBase-input-MuiInput-input {
-  color: white !important;
-} */
 
 #contact-text label{
   color: white;
