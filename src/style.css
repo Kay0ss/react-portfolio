@@ -173,7 +173,8 @@ Body::-webkit-scrollbar-thumb {
 .git,
 .sass,
 .bootstrap,
-.figma  {
+.figma,
+.node {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -188,7 +189,8 @@ Body::-webkit-scrollbar-thumb {
 .git,
 .sass,
 .bootstrap,
-.figma {
+.figma,
+.node {
   color: black;
 }
 
@@ -231,6 +233,10 @@ Body::-webkit-scrollbar-thumb {
 
 .figma:hover {
   color: rgb(149, 0, 0);
+}
+
+.node:hover {
+  color:rgb(50, 140, 42)
 }
 
 /* --------------- Projects-------------------------------------------------------------- */
@@ -358,6 +364,7 @@ a a:hover,
   margin-bottom: 0;
   color: white;
   font-weight: 300;
+  transition: all .2s ease-in-out;
 }
 
 .contact-desc a {
@@ -376,6 +383,11 @@ a a:hover,
   flex-direction: row;
   justify-content: center;
   gap: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.follow h1:hover{
+  transform: scale(1.1);
 }
 
 .contact-container {
@@ -529,10 +541,6 @@ h1 {
 
   .html5, .css3, .js, .bootstrap, .git, .react, .sass, .figma {
     color: black;
-  }
-
-  .projects{
- 
   }
 
   .recent-title{
