@@ -439,6 +439,10 @@ h1 {
   border-bottom: 2px solid white !important;
 }
 
+.css-5xn5lu-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 2px solid white !important;
+}
+
 .css-1480iag-MuiInputBase-root-MuiInput-root::after {
   border-bottom: 2px solid white !important;
 }
