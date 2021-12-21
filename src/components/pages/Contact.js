@@ -83,6 +83,8 @@ function Contact(props) {
           name="message"
           label="Message"
           variant="standard"
+          autoComplete="none"
+          required
           focused
         ></TextField>
         <br></br>
