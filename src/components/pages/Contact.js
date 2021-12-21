@@ -4,8 +4,45 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter, faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { makeStyles } from "@mui/styles";
+import "../../style.css";
 
-function Contact(props) {
+const useStyles = makeStyles({
+  field: {
+            // marginBottom: "1rem",
+            // label
+            '& .MuiFormLabel-root': {
+              color: 'white',
+            },
+            '& .MuiFormLabel-root.Mui-focused': {
+              color: 'white',
+            },
+            // unfocused text underline
+            '& .MuiInputBase-root:before': {
+              // borderBottom: '1px solid white'
+            },
+            '& .MuiInputBase-root': {
+              borderBottom: '1px solid white'
+            },
+            // typed into text underline hover
+            '& .MuiInputBase-root.Mui-focused:hover': {
+              // borderBottom: '2px solid white'
+            },
+            // typed into text underline
+            '& .MuiInputBase-root:after': {
+              borderBottom: '2px solid white'
+            },
+            // text color
+            '& .MuiInputBase-input': {
+              color: 'white'
+            }
+  },
+  
+
+});
+
+export default function Contact(props) {
+  const classes = useStyles();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -45,10 +82,9 @@ function Contact(props) {
         </div>
       </div>
       <form onSubmit={sendEmail} className="contact-container">
-
         <TextField
+        className={classes.field}
           sx={{
-            marginBottom: "1rem",
           }}
           id="contact-text"
           name="name"
@@ -56,13 +92,12 @@ function Contact(props) {
           variant="standard"
           autoComplete="none"
           required
-          focused
-          // inputRef={myRef}
         />
         <TextField
-          sx={{
-            marginBottom: "1rem",
-          }}
+         sx={{
+          marginTop: '10px'
+        }}
+          className={classes.field}
           id="outlinedBasic"
           name="email"
           type="email"
@@ -70,39 +105,38 @@ function Contact(props) {
           variant="standard"
           autoComplete="none"
           required
-          focused
+          color="info"
+          // focused
           // inputRef={myRef}
         />
 
         <TextField
-          sx={{
-            marginBottom: "15px",
-          }}
+          className={classes.field}
+         sx={{
+          marginTop: '10px'
+        }}
           multiline
           id="outlined-basic"
           name="message"
           label="Message"
           variant="standard"
           autoComplete="none"
-          required
-          focused
+          // focused
         ></TextField>
         <br></br>
         <Button
-          sx={{
-            marginTop: "20px",
-            color: "black",
-            backgroundColor: "#e9e9e9",
-            "&:hover": {
-              backgroundColor: "#ababab",
-            },
-          }}
+        sx={{
+          background: 'white',
+          "&:hover": {
+            background: 'lightgray'
+          },
+          marginTop: '15px',
+          marginBottom: '40px'
+        }}
+        
           type="submit"
           value="Send Message"
-          variant="outlined"
-          // onClick={() => {
-          //   myRef.current.reportValidity();
-          // }}
+          variant="filled"
         >
           Send
         </Button>
@@ -113,4 +147,3 @@ function Contact(props) {
   );
 }
 
-export default Contact;

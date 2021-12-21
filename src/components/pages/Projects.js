@@ -13,6 +13,7 @@ export default function Projects() {
         <div className="proj-bio">
         <h1>True Crime Quiz</h1>
         <p>A simple quiz app with login to keep track of questions the user has made. It was made using, React, HTML, CSS, and Auth0.</p>
+        <a href="https://true-crime-quiz.herokuapp.com/" target="_blank" rel="noreferrer">Active Site</a>
         </div>
         </div>
 
@@ -23,6 +24,7 @@ export default function Projects() {
         <div className="proj-bio-left">
         <h1>Character Quiz</h1>
         <p>This is my very first project, it's a simple Star Wars character quiz. It was made using a third party API, HTML, Javascript, and CSS.</p>
+        <a href="https://coleenyart.github.io/which-star-wars-character-are-you/" target="_blank" rel="noreferrer">Active Site</a>
         </div><img className="right" src={Starquiz} alt="true crime"/>
         
         </div>
@@ -35,6 +37,7 @@ export default function Projects() {
         <div className="proj-bio">
         <h1>CaptionMe(me)</h1>
         <p>A meme creation web app, featuring a login to create, update, and delete memes. It was made using, handlebars, HTML, CSS, and Javascript.</p>
+        <a href="https://captionmeme.herokuapp.com/" target="_blank" rel="noreferrer">Active Site</a>
         </div>
         </div>
 

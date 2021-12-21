@@ -295,12 +295,19 @@ Body::-webkit-scrollbar-thumb {
   font-family: var(--font-family-roboto);
   color: white;
   font-size: 25px;
-  /* text-align: center; */
+  text-align: center;
   font-weight: 100;
 }
 
-.proj-bio {
+.proj-bio, .proj-bio-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 25px;
+}
+
+.proj-bio a {
+
 }
 
 .project-right {
@@ -423,7 +430,19 @@ h1 {
   margin-bottom: 20px;
 }
 
-.css-348fk2.Mui-focused {
+.MuiInputLabel-root {
+  color: red;
+}
+
+/* .css-348fk2.Mui-focused {
+  color: white !important;
+}
+
+.css-mnn31 {
+  color: white !important;
+}
+
+.css-mnn31 {
   color: white !important;
 }
 
@@ -461,7 +480,7 @@ h1 {
 
 .css-66dh3a-MuiInputBase-input-MuiInput-input {
   color: white !important;
-}
+} */
 
 #contact-text label{
   color: white;
