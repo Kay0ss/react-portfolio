@@ -98,7 +98,6 @@ function Contact(props) {
           type="submit"
           value="Send Message"
           variant="outlined"
-          value="send"
           // onClick={() => {
           //   myRef.current.reportValidity();
           // }}
