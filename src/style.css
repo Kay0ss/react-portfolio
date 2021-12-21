@@ -423,6 +423,10 @@ h1 {
   margin-bottom: 20px;
 }
 
+.css-348fk2.Mui-focused {
+  color: white !important;
+}
+
 .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
   color: white !important;
 }
@@ -431,11 +435,11 @@ h1 {
   color: white !important;
 }
 
-.css-1480iag-MuiInputBase-root-MuiInput-root:after {
+.css-1480iag-MuiInputBase-root-MuiInput-root::after {
   border-bottom: 2px solid white !important;
 }
 
-.css-5xn5lu-MuiInputBase-root-MuiInput-root:after {
+.css-5xn5lu-MuiInputBase-root-MuiInput-root::after {
   border-bottom: 2px solid white !important;
 }
 
