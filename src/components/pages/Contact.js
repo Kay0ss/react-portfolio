@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter, faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Contact(props) {
-  const { classes } = props;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -28,7 +27,6 @@ function Contact(props) {
       );
     e.target.reset();
   };
-  let myRef = {};
 
   return (
     <div className="color">
@@ -39,11 +37,11 @@ function Contact(props) {
         <a href="mailto:jackshoolbiz@gmail.com">jackschoolbiz@gmail.com</a>
         <p id="email">Follow me</p>
         <div className="follow">
-        <a href="https://www.linkedin.com/in/jacktheisen/" target="_blank"><h1><FontAwesomeIcon icon={faLinkedin} size="sm"/></h1></a>
-        <a href="https://github.com/Kay0ss" target="_blank"><h1><FontAwesomeIcon icon={faGithub} size="sm"/></h1></a>
-        <a href="https://twitter.com/WebDevCarGuy" target="_blank"><h1><FontAwesomeIcon icon={faTwitter} size="sm"/></h1></a>
-        <a href="https://www.facebook.com/jack.the.isen13/" target="_blank"><h1><FontAwesomeIcon icon={faFacebookSquare} size="sm"/></h1></a>
-        <a href="https://www.instagram.com/jack_the_isen/" target="_blank"><h1><FontAwesomeIcon icon={faInstagram} size="sm"/></h1></a>
+        <a href="https://www.linkedin.com/in/jacktheisen/" target="_blank" rel="noreferrer"><h1><FontAwesomeIcon icon={faLinkedin} size="sm"/></h1></a>
+        <a href="https://github.com/Kay0ss" target="_blank" rel="noreferrer"><h1><FontAwesomeIcon icon={faGithub} size="sm"/></h1></a>
+        <a href="https://twitter.com/WebDevCarGuy" target="_blank" rel="noreferrer"><h1><FontAwesomeIcon icon={faTwitter} size="sm"/></h1></a>
+        <a href="https://www.facebook.com/jack.the.isen13/" target="_blank" rel="noreferrer"><h1><FontAwesomeIcon icon={faFacebookSquare} size="sm"/></h1></a>
+        <a href="https://www.instagram.com/jack_the_isen/" target="_blank" rel="noreferrer"><h1><FontAwesomeIcon icon={faInstagram} size="sm"/></h1></a>
         </div>
       </div>
       <form onSubmit={sendEmail} className="contact-container">

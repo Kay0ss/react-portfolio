@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <div className="landing">
-        <img className="hero" src={landingPage} />
+        <img className="hero" src={landingPage} alt="hero"/>
       </div>
 
       <h1 class="bounce"><FontAwesomeIcon icon={ faAngleDoubleDown }></FontAwesomeIcon></h1>
