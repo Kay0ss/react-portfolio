@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.155816ee.chunk.css",
-    "main.js": "/static/js/main.968ca027.chunk.js",
-    "main.js.map": "/static/js/main.968ca027.chunk.js.map",
+    "main.js": "/static/js/main.54088f04.chunk.js",
+    "main.js.map": "/static/js/main.54088f04.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fb7fa0a0.js",
     "runtime-main.js.map": "/static/js/runtime-main.fb7fa0a0.js.map",
     "static/css/2.93211498.chunk.css": "/static/css/2.93211498.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/True-Crime.418aff88.png": "/static/media/True-Crime.418aff88.png",
     "static/media/caption-me.b3e77bbc.png": "/static/media/caption-me.b3e77bbc.png",
     "static/media/landingpage.873170b3.svg": "/static/media/landingpage.873170b3.svg",
-    "static/media/me.57685930.jpeg": "/static/media/me.57685930.jpeg",
+    "static/media/me.f74c6515.png": "/static/media/me.f74c6515.png",
     "static/media/star-wars-quiz.e8cd8c73.png": "/static/media/star-wars-quiz.e8cd8c73.png"
   },
   "entrypoints": [
@@ -26,6 +26,6 @@
     "static/css/2.93211498.chunk.css",
     "static/js/2.5985fbf5.chunk.js",
     "static/css/main.155816ee.chunk.css",
-    "static/js/main.968ca027.chunk.js"
+    "static/js/main.54088f04.chunk.js"
   ]
 }
