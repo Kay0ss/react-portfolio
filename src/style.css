@@ -50,7 +50,7 @@ Body::-webkit-scrollbar-thumb {
   margin-top: 34px;
   width: 100vw;
   height: 100%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 @keyframes bounce {
@@ -303,8 +303,9 @@ Body::-webkit-scrollbar-thumb {
 .proj-bio, .proj-bio-left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 40px;
 }
 
 .site-btn {
@@ -633,6 +634,7 @@ h1 {
   .skills-title{
     /* margin-bottom: -4vh; */
     margin-left: 40%;
+    height: 30%;
     width: 20%;
     transform: rotate(-90deg);
     margin-bottom: -15% !important;
