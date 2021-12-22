@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../../images/me.jpeg";
+import Me from "../../images/me.png";
 import Image from "react-bootstrap/Image";
 import "animate.css/animate.min.css"
 import about from "../../images/About.svg"
