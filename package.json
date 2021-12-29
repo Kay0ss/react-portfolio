@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://jackt.xyz",
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -35,6 +36,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
+    "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
     "deploy": "npm run build && echo 'jackt.xyz' > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
@@ -54,5 +56,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "glob-all": "^3.2.1",
+    "purgecss-webpack-plugin": "^4.1.3"
   }
 }
