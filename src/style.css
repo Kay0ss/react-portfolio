@@ -99,6 +99,7 @@ Body::-webkit-scrollbar-thumb {
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: #f64c72;
   font-weight: 600;
+  z-index: 0;
 }
 
 #myPic {
@@ -127,10 +128,10 @@ Body::-webkit-scrollbar-thumb {
   font-weight: 400;
   text-align: left;
   color: rgb(211, 211, 211);
-  font-size: 35px;
+  font-size: 2.25vw;
   width: 60%;
   align-self: center;
-  padding: 20px;
+  padding: 30px 20px 20px 30px;
   /* min-width: 90%; */
 }
 
