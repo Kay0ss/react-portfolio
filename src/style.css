@@ -446,12 +446,12 @@ h1 {
   text-transform: uppercase;
 }
 
-.MuiTextField-root {
+/* .MuiTextField-root {
   color: white !important;
   width: 85%;
   padding-bottom: 30px;
   margin-bottom: 20px;
-}
+} */
 
 .MuiInputLabel-root {
   color: red;

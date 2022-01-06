@@ -35,8 +35,12 @@ const useStyles = makeStyles({
             // text color
             '& .MuiInputBase-input': {
               color: 'white'
-            }
+            },
+            width: '85%'
+            
   },
+  text: {
+  }
   
 
 });
@@ -126,6 +130,7 @@ function Contact(props) {
         <br></br>
         <Button
         sx={{
+          width: '20ch',
           background: 'white',
           "&:hover": {
             background: 'lightgray'
