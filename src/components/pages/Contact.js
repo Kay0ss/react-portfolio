@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter, faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { makeStyles } from "@mui/styles";
+import { makeStyles, withStyles } from "@mui/styles";
 import "../../style.css";
 
 const useStyles = makeStyles({
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
 
 });
 
-export default function Contact(props) {
+function Contact(props) {
   const classes = useStyles();
 
   const sendEmail = (e) => {
@@ -146,4 +146,5 @@ export default function Contact(props) {
     </div>
   );
 }
+export default withStyles(makeStyles)(Contact);
 
