@@ -276,6 +276,7 @@ Body::-webkit-scrollbar-thumb {
   display: flex;
   border-bottom-right-radius: 69px;
   border-top-left-radius: 69px;
+
 }
 
 .left{
@@ -288,7 +289,11 @@ Body::-webkit-scrollbar-thumb {
 
 .project img {
   width: 60%;
-  height: inherit;
+  max-width: 60%;
+  min-width: 55%;
+  max-width: 100%;
+  height: auto;
+  min-height: 400px;
   padding: 1px;
   /* border: 4px solid rgb(0, 0, 0); */
 }
@@ -296,9 +301,11 @@ Body::-webkit-scrollbar-thumb {
 .project p {
   font-family: var(--font-family-roboto);
   color: white;
-  font-size: 25px;
+  font-size: 2vw;
   text-align: center;
   font-weight: 100;
+  line-height: 4vh;
+  /* overflow-y: scroll; */
 }
 
 .proj-bio, .proj-bio-left {
@@ -306,15 +313,18 @@ Body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 25px;
+  height: 60vh;
+  /* overflow-y: scroll; */
 }
+
 
 .site-btn {
   text-decoration: none;
   color: black;
   background-color: white;
   padding: 8px;
-  width: 30%;
+  width: 10vw;
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
