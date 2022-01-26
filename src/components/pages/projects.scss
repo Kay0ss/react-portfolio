@@ -1,4 +1,4 @@
-$background: #efefef;
+$background: #000000;
 $svg-width: 60px;
 
 article {
@@ -19,6 +19,8 @@ article {
   width: calc(50% + 30px);
   background-color: #00a8a4;
   position: relative;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
   
 
   svg {
@@ -49,9 +51,10 @@ article {
 
 h1 {
   font-size: 3rem;
-  color: black;
+  color: #fff;
 }
 p {
   font-size: 1rem;
   margin: 1rem 0;
+  color: #fff;
 }
