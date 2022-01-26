@@ -19,6 +19,7 @@ function Skills(props){
         <h1><FontAwesomeIcon icon={faSass} size="3x" className="sass"/></h1>
         <h1><FontAwesomeIcon icon={faFigma} size="3x" className="figma"/></h1>
         <h1><FontAwesomeIcon icon={faNodeJs} size="3x" className="node"/></h1>
+    
 
 
 
@@ -28,3 +29,4 @@ function Skills(props){
 }
 
 export default Skills;
+

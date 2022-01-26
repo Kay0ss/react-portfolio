@@ -28,6 +28,10 @@ Body::-webkit-scrollbar-thumb {
   background-color: #bfbfbf;
 }
 
+Body {
+  overflow-x: hidden;
+}
+
 /* ----NavBar----------------------------------------------------------------------------- */
 
 .nav {
@@ -271,59 +275,13 @@ Body::-webkit-scrollbar-thumb {
   background: #2f2fa2;
 }
 
-.project {
-  background-color: black;
-  display: flex;
-  border-bottom-right-radius: 69px;
-  border-top-left-radius: 69px;
-
-}
-
-.left{
-  border-top-left-radius: 69px;
-}
-
-.right {
-  border-bottom-right-radius: 69px;
-}
-
-.project img {
-  width: 60%;
-  max-width: 60%;
-  min-width: 55%;
-  max-width: 100%;
-  height: auto;
-  min-height: 400px;
-  padding: 1px;
-  /* border: 4px solid rgb(0, 0, 0); */
-}
-
-.project p {
-  font-family: var(--font-family-roboto);
-  color: white;
-  font-size: 2vw;
-  text-align: center;
-  font-weight: 100;
-  line-height: 4vh;
-  /* overflow-y: scroll; */
-}
-
-.proj-bio, .proj-bio-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
-  height: 60vh;
-  /* overflow-y: scroll; */
-}
-
-
 .site-btn {
   text-decoration: none;
   color: black;
   background-color: white;
   padding: 8px;
+  margin: auto;
+  float: left;
   width: 10vw;
   text-align: center;
   font-weight: 500;
@@ -331,27 +289,17 @@ Body::-webkit-scrollbar-thumb {
   background-color: #f64c72;
   border-radius: 10px;
   transition: 0.1s ease-in-out;
-  box-shadow: 0 1px 18px rgba(255, 0, 130, 0.5);
 }
 
 .site-btn:hover {
-  color: black;
+  color: white;
+  box-shadow: 0 1px 18px rgba(255, 0, 130, 0.5);
+
 }
 
 .site-btn:active {
   transform: scale(0.9);
   box-shadow: 0 1px 9px rgba(255, 0, 130, 0.5);
-}
-
-.project-right {
-  background-color: black;
-  display: flex;
-  border-bottom-right-radius: 69px;
-  border-top-left-radius: 69px;
-}
-
-.proj-bio-left {
-  padding: 25px;
 }
 
 a a:hover,
@@ -691,8 +639,8 @@ h1 {
     margin-left: 0;
   }
 
-  .project {
-    display: none;;
+  article {
+    display: none !important;
   }
 
   .mobile {
