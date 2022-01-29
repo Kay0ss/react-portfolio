@@ -3,6 +3,7 @@ import Projects from "../pages/Projects";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Skills from "../pages/Skills";
+import iframe from "../pages/iframe";
 import landingPage from "../../images/landingpage.svg";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,9 +17,10 @@ function Home() {
         <img className="hero" src={landingPage} alt="hero"/>
       </div>
 
-      <h1 className="bounce"><FontAwesomeIcon icon={ faAngleDoubleDown }></FontAwesomeIcon></h1>
+      {/* <h1 className="bounce"><FontAwesomeIcon icon={ faAngleDoubleDown }></FontAwesomeIcon></h1> */}
       <About />
       <Skills />
+      {/* <iframe /> */}
       <Projects />
       <Contact id="Contact" />
 
