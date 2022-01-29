@@ -16,7 +16,7 @@ function Home() {
         <img className="hero" src={landingPage} alt="hero"/>
       </div>
 
-      <h1 class="bounce"><FontAwesomeIcon icon={ faAngleDoubleDown }></FontAwesomeIcon></h1>
+      <h1 className="bounce"><FontAwesomeIcon icon={ faAngleDoubleDown }></FontAwesomeIcon></h1>
       <About />
       <Skills />
       <Projects />

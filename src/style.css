@@ -199,49 +199,33 @@ Body {
   color: black;
 }
 
-.html5:hover,
-.css3:hover,
-.js:hover,
-.react:hover,
-.git:hover,
-.sass:hover,
-.bootstrap:hover,
-.figma:hover,
-.node:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.html5:hover {
+.html5 {
   color: rgb(205 51 28);
 }
-.css3:hover {
+.css3 {
   color: rgb(20 87 157);
 }
-.js:hover {
+.js {
   color: rgb(221 200 59);
 }
-.bootstrap:hover {
+.bootstrap {
   color: rgb(79 41 123);
 }
-.git:hover {
+.git {
   color: rgb(0 0 0);
 }
-.react:hover {
+.react {
   color: rgb(78 196 234);
 }
-.sass:hover {
+.sass {
   color: rgb(179 75 127);
 }
 
-.figma:hover {
+.figma {
   color: rgb(149, 0, 0);
 }
 
-.node:hover {
+.node {
   color:rgb(50, 140, 42)
 }
 
@@ -270,9 +254,10 @@ Body {
   flex-direction: column;
   width: 70%;
   margin-left: 5%;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
   background: #2f2fa2;
+  height: 100%;
 }
 
 .site-btn {

@@ -11,7 +11,7 @@ export default function Projects() {
       <img className="projects-title" src={Project} alt="projects" />
       <div className="projects-container">
         <article>
-          <div class="left">
+          <div className="left">
             <h1>True Crime Quiz</h1>
             <p>
               A simple quiz app with login to keep track of questions the user
@@ -28,11 +28,11 @@ export default function Projects() {
             </a>
             </div>
           </div>
-          <div class="right">
+          <div className="right">
             <svg viewBox="0 0 40 200" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0l40 200H0" fill-rule="evenodd" />
+              <path d="M0 0l40 200H0" fillRule="evenodd" />
             </svg>
-            <img class="image" src={trueCrime} alt="true crime" />
+            <img className="image" src={trueCrime} alt="true crime" />
           </div>
         </article>
 
@@ -47,7 +47,7 @@ export default function Projects() {
         </div>
 
         <article>
-          <div class="left">
+          <div className="left">
             <h1>Caption Me</h1>
             <p>
               A simple app that allows users to upload images and caption them
@@ -64,11 +64,11 @@ export default function Projects() {
             </a>
             </div>
           </div>
-          <div class="right">
+          <div className="right">
             <svg viewBox="0 0 40 200" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0l40 200H0" fill-rule="evenodd" />
+              <path d="M0 0l40 200H0" fillRule="evenodd" />
             </svg>
-            <img class="image" src={captionMe} alt="caption me" />
+            <img className="image" src={captionMe} alt="caption me" />
           </div>
         </article>
         
@@ -83,7 +83,7 @@ export default function Projects() {
         </div>
 
         <article>
-          <div class="left">
+          <div className="left">
             <h1>Star Wars Quiz</h1>
             <p>
               A simple quiz app with login to keep track of questions the user
@@ -100,11 +100,11 @@ export default function Projects() {
             </a>
             </div>
           </div>
-          <div class="right">
+          <div className="right">
             <svg viewBox="0 0 40 200" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0l40 200H0" fill-rule="evenodd" />
+              <path d="M0 0l40 200H0" fillRule="evenodd" />
             </svg>
-            <img class="image" src={Starquiz} alt="Star Wars Quiz" />
+            <img className="image" src={Starquiz} alt="Star Wars Quiz" />
           </div>
         </article>
 
