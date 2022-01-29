@@ -19,9 +19,6 @@ function About(props) {
           </p>
           <Image
             fluid
-            // width="15%"
-            // height="15%"
-            // max-width="50%"
             id="myPic"
             src={Me}
             className="img-round"
