@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.b30cb9b6.chunk.css",
-    "main.js": "/static/js/main.d49a77b8.chunk.js",
-    "main.js.map": "/static/js/main.d49a77b8.chunk.js.map",
+    "main.css": "/static/css/main.276bdfa6.chunk.css",
+    "main.js": "/static/js/main.19655b8d.chunk.js",
+    "main.js.map": "/static/js/main.19655b8d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fb7fa0a0.js",
     "runtime-main.js.map": "/static/js/runtime-main.fb7fa0a0.js.map",
     "static/css/2.93211498.chunk.css": "/static/css/2.93211498.chunk.css",
@@ -10,11 +10,11 @@
     "static/js/2.7ee9bd95.chunk.js.map": "/static/js/2.7ee9bd95.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.93211498.chunk.css.map": "/static/css/2.93211498.chunk.css.map",
-    "static/css/main.b30cb9b6.chunk.css.map": "/static/css/main.b30cb9b6.chunk.css.map",
+    "static/css/main.276bdfa6.chunk.css.map": "/static/css/main.276bdfa6.chunk.css.map",
     "static/js/2.7ee9bd95.chunk.js.LICENSE.txt": "/static/js/2.7ee9bd95.chunk.js.LICENSE.txt",
     "static/media/About.e1ed37fb.svg": "/static/media/About.e1ed37fb.svg",
-    "static/media/Projects.71673a19.svg": "/static/media/Projects.71673a19.svg",
-    "static/media/Skills.bbf649da.svg": "/static/media/Skills.bbf649da.svg",
+    "static/media/Projects.ed6ca53e.svg": "/static/media/Projects.ed6ca53e.svg",
+    "static/media/Skills.2ce1c89b.svg": "/static/media/Skills.2ce1c89b.svg",
     "static/media/True-Crime.418aff88.png": "/static/media/True-Crime.418aff88.png",
     "static/media/caption-me.b3e77bbc.png": "/static/media/caption-me.b3e77bbc.png",
     "static/media/landingpage.71c84545.svg": "/static/media/landingpage.71c84545.svg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.fb7fa0a0.js",
     "static/css/2.93211498.chunk.css",
     "static/js/2.7ee9bd95.chunk.js",
-    "static/css/main.b30cb9b6.chunk.css",
-    "static/js/main.d49a77b8.chunk.js"
+    "static/css/main.276bdfa6.chunk.css",
+    "static/js/main.19655b8d.chunk.js"
   ]
 }
