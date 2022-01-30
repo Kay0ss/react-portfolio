@@ -7,23 +7,28 @@ import about from "../../images/About.svg"
 function About(props) {
   return (
     <div className="about-section">
-      <img src={about} className="about-title" alt="about me"></img>
-        <div className="about">
-          <p id="grabber">
-            <span className="highlight">I believe</span> there are so many
-            things in this world that are yet to be done and so many new{" "}
-            <span className="highlight">stories</span> to be told. My goal in
-            life is to capture those moments and ensure they{" "}
-            <span className="highlight">live </span>on{" "}
-            <span className="highlight">forever.</span>
-          </p>
-          <Image
-            fluid
-            id="myPic"
-            src={Me}
-            className="img-round"
-            alt="profile of me"
-          />
+        <img src={about} className="about-title" alt="about me"></img>
+          <div className="about">
+      <div className="about-row" style={{display: 'flex', justifyContent:'center', flexWrap: 'wrap'}}>
+            <p id="grabber">
+              <span className="highlight">I believe</span> there are so many
+              things in this world that are yet to be done and so many new{" "}
+              <span className="highlight">stories</span> to be told. My goal in
+              life is to capture those moments and ensure they{" "}
+              <span className="highlight">live </span>on{" "}
+              <span className="highlight">forever.</span>
+            </p>
+            <Image
+              fluid
+              id="myPic"
+              src={Me}
+              className="img-round"
+              alt="profile of me"
+            />
+      </div>
+      <br />
+      <h1>The Days I Code</h1>
+      <iframe src="https://csb-0g3fh.netlify.app/" title="Days i Code" scrolling="no"></iframe>
         </div>
 
       </div>
