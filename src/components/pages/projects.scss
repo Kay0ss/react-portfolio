@@ -16,11 +16,15 @@ article:hover {
 }
 
 .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: calc(50% - 30px);
   padding: 20px 5px 20px 20px;
   background: $background;
   border-bottom-left-radius: 40px;
   border-top-left-radius: 40px; 
+
 }
 
 .right {
@@ -64,9 +68,11 @@ h1 {
   color: #fff;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 1rem 0;
+  margin: auto;
   color: #fff;
   padding: 20px;
   text-align: center;
+  width: 80%;
 }

@@ -3,7 +3,6 @@ import Projects from "../pages/Projects";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Skills from "../pages/Skills";
-import Days from "../pages/iframe";
 import landingPage from "../../images/landingpage.svg";
 import "animate.css/animate.min.css";
 import "animate.css";
@@ -17,7 +16,6 @@ function Home() {
       </div>
       <About />
       <Skills />
-      <Days />
       <Projects />
       <Contact id="Contact" />
       <div className="copyright"> © 2021 Jack Theisen</div>
