@@ -3,7 +3,8 @@ import Projects from "../pages/Projects";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Skills from "../pages/Skills";
-import iframe from "../pages/iframe";
+// import GitHubCalendar from "react-github-calendar";
+import Days from "../pages/iframe";
 import landingPage from "../../images/landingpage.svg";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,15 +15,17 @@ function Home() {
   return (
     <>
       <div className="landing">
-        <img className="hero" src={landingPage} alt="hero"/>
+        <img className="hero" src={landingPage} alt="hero" />
       </div>
 
       {/* <h1 className="bounce"><FontAwesomeIcon icon={ faAngleDoubleDown }></FontAwesomeIcon></h1> */}
       <About />
       <Skills />
-      {/* <iframe /> */}
+      <Days />
       <Projects />
       <Contact id="Contact" />
+
+      {/* <GitHubCalendar username="Kay0ss" /> */}
 
       <div className="copyright"> © 2021 Jack Theisen</div>
     </>

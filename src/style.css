@@ -229,6 +229,31 @@ Body {
   color:rgb(50, 140, 42)
 }
 
+/* ----------------Iframe----------------------------------------------------------------- */
+.iframe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100vw;
+  padding: 30px;
+  background-color: #2f2fa2;
+}
+
+.iframe-container iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* padding: 30px; */
+
+
+}
+
+
 /* --------------- Projects-------------------------------------------------------------- */
 
 .projects {
