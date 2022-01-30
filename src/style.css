@@ -11,25 +11,25 @@
 }
 
 
-Body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.509);
-  background-color: #2f2fa2;
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.509) !important;
+  background-color: #2f2fa2 !important;
 }
 
-Body::-webkit-scrollbar {
-  height: 0px;
-  width: 10px;
-  background-color: #f5f5f5;
+*::-webkit-scrollbar {
+  height: 0px !important;
+  width: 10px !important;
+  background-color: #f5f5f5 !important;
 }
 
-Body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #bfbfbf;
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  background-color: #bfbfbf !important;
 }
 
-Body {
-  overflow-x: hidden;
+body {
+  overflow-x: hidden !important;
 }
 
 /* ----NavBar----------------------------------------------------------------------------- */
@@ -48,13 +48,17 @@ Body {
 
 .landing{
   background-color: #2f2fa2;
+  display: flex;
+  justify-content: center;
 }
 
 .hero{
   margin-top: 34px;
-  width: 98vw;
+  width: 97vw;
   height: auto;
   padding-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes bounce {
@@ -107,11 +111,7 @@ Body {
 }
 
 #myPic {
-  border-radius: 100em;
-  min-width: 100px;
-  min-height: 100px;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 250px;
   align-self: center;
   padding: 20px;
 }
@@ -349,6 +349,7 @@ a a:hover,
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 
 .contact-desc h3 {
@@ -499,8 +500,8 @@ h1 {
   }
   
   #myPic {
-    margin: 30px;
-    border-radius: 50em;
+    /* margin: 30px;
+    border-radius: 50em; */
   }
 
   #grabber {
@@ -585,9 +586,9 @@ h1 {
   .about #myPic {
     position: inherit;
     margin: 0;
-    padding: 30px;
-    min-width: 45%;
-    min-height: 45%;
+    padding: 50px;
+    min-width: 40%;
+    min-height: auto;
     
   }
 
