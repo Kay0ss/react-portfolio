@@ -30,7 +30,7 @@ article:hover {
 .right {
   width: calc(50% + 30px);
   background-color: #2f2fa2;
-  margin-left: -1px;
+  // margin-left: -1px;
   position: relative;
   border-bottom-right-radius: 40px;
   border-top-right-radius: 40px;
@@ -39,8 +39,9 @@ article:hover {
   svg {
     height: 100%;
     position: absolute;
-    left: 0;
+    // left: -1.7px;
     top: 0;
+    z-index: 3;
   }
   path {
     // content='d="M0 0l40 200H0"';
@@ -50,15 +51,17 @@ article:hover {
 .wrapper {
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
 }
 .image {
   // background:url(http://twin-dev.net/experiments/codevember/diagonal-homepage/img/office-day.svg) center no-repeat transparent;
   width: 100%;
   height: 100%;
+  // margin-top: 1px;
   object-fit: cover;
   border-bottom-right-radius: 40px;
   border-top-right-radius: 40px;
+  transform: scale(0.994);
+  z-index: -1;
 }
 
 ///////////////
